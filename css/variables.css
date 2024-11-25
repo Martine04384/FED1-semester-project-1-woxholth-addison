@@ -1,8 +1,12 @@
 /* Use this file to store your useful variables */
 /* This could be colors, fonts, or padding sizes! */
 
-/** 
+
 :root {
-    --color-primary: ;
-    --color-secondary: ;
-  } **/
+    --color-primary: #3E8C49;
+    --color-primary--light: #41A650;
+    --color-primary--dark: #23592B;
+    --color-secondary: #DDBF02;
+    --color-background: #F2F2F2;
+    --color-text: #0D0D0D;
+  }
