@@ -1,0 +1,36 @@
+*, *:before, *:after {
+    box-sizing: inherit;
+  }
+  
+  body {
+    box-sizing: border-box;
+    min-height: 100vh;
+    margin: 0;
+    display: grid;
+    grid-template-rows: auto 1fr auto;
+  }
+  
+  main {
+    max-width: 1000px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 0 20px;
+  }
+  
+  /* Text */
+  
+  
+  /* Navigation */
+  
+  
+  /* Nav on different screens */
+
+  
+  /* CTA buttons*/
+  
+  
+  /* Forms */
+
+  
+  /* footer */
+  
