@@ -1,15 +1,41 @@
 @import url("./reset.css");
 @import url("./variables.css");
 
-.container {
-    height: vh;
-    max-width: 343px;
-    width: 100%;
-    margin: 0 auto;
+.container-header {
+    position: relative;
+    height: 90vh;
+    width: 95%;
+    margin: 16px auto;
+    background-image: url('../assets/ABF404CC-25BA-4C87-B509-F059DD409383_1_201_a.jpg');
+    background-size: cover; 
+    background-position: center; 
+    background-repeat: no-repeat; 
+    border-radius: 20px; 
+    overflow: hidden; 
+    box-shadow: 0px 4px 16px rgba(0, 0, 0, 0.4);
+
 }
 
-img {
-    max-width: 100%;
-    max-height: 100%;
-    object-fit: fill;
+.container-header h1 span {
+    display: block; 
+    text-align: center;
+}
+
+.container-header h1 {
+    margin: 0;
+}
+
+@media screen and (max-width:599px) {
+    .container-header {
+        display: flex;
+        justify-content: center;
+        align-items: flex-start;
+    }
+}
+
+@media screen and (min-width:600px) {
+    .container-header h1 span {
+        padding-left: 16px;
+        text-align: left;
+    }
 }
