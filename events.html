@@ -11,7 +11,7 @@
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=MuseoModerno:ital,wght@0,100..900;1,100..900&family=Roboto+Serif:ital,opsz,wght@0,8..144,100..900;1,8..144,100..900&display=swap" rel="stylesheet">
 
-        <link rel="stylesheet" href="css/index.css">
+        <link rel="stylesheet" href="css/events.css">
 
         <link rel="icon" type="image/png" sizes="16x16" href="assets/favicon.png">
 
@@ -29,13 +29,9 @@
             <input type="checkbox" name="menue-checkbox" id="menue-checkbox">
             <nav>
                 <a href="index.html">Home</a>
-                <a href="about.html">About</a>
                 <a href="explore.html">Explore</a>
                 <a href="exhibitions.html">Exhibition</a>
                 <a href="events.html">Events</a>                
-                <a href="contact-us.html">Contact</a>
-                <a href="visit.html">Visit</a>
-                <a href="get-involved.html">Get involved</a>
                 <a href="tickets.html">Tickets</a>
                 <a href="cart.html">Cart</a>
             </nav>
@@ -43,25 +39,35 @@
        
         <main> 
             <h1>Upcoming events</h1>
-            <section>
-                <img src="" alt="">
+
+            <section class="card">
+                <div class="card-container">
+                    <img src="./assets/roberto-nickson-396152.jpg" alt="">
+                </div>
                 <h2>Night in the museum</h2>
                 <p>Get your family together for an exciting night in the museum as you sleep over beside dinosaurs and science displays. Bring your own sleeping bag and get ready to rough it as we go exploring the wonders of science.</p>
                 <a href="" class="cta-button">Buy tickets</a>
             </section>
+
             <section>
                 <h2>Whats happening this week - 50</h2>
-                <section>
+
+                <section class="card">
                     <h3>Friday</h3>
                     <h4>Visiting Professor of Aeronautics</h4>
-                    <img src="" alt="">
+                    <div class="card-container__small">
+                        <img src="./assets/celso-405219.jpg" alt="">
+                    </div>
                     <p>It is our pleasure to announce that Prof Sheila Widnall from the Massachusetts Institute of Technology will be delivering 3 lectures on the development of aeronautics and where the future lies in this exciting ‘space’.</p>
                     <a href="" class="cta-button">Buy tickets</a>
                 </section>
-                <section>
+
+                <section class="card">
                     <h3>Sunday</h3>
                     <h4>Energetica Exhibition on Loan</h4>
-                    <img src="" alt="">
+                    <div class="card-container_small">
+                        <img src="./assets/scientific-2040795_1280.jpg" alt="">
+                    </div>
                     <p>On loan from the NEMO Science Museum in Amsterdam, the Energetica exhibition is coming to the Community Science Museum. It’s a series of installations that allow visitors to experience the power of the elements as we harness them. From solar energy powering lighting, to ‘Wind Island’ that shows how turbines are able to use and control wind to create power.</p>
                     <a href="" class="cta-button">Buy tickets</a>
                 </section>
@@ -70,7 +76,10 @@
         </main>
        
         <footer>
-            <p>Copyright &copy;</p>
+            <a href="about.html">About</a>
+            <a href="contact-us.html">Send us a message</a>
+            <a href="get-involved.html">Get involved</a>
+            <a href="visit.html">Visit</a>
         </footer>
 
     </body>

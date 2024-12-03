@@ -1,0 +1,49 @@
+@import url("./reset.css");
+@import url("./variables.css");
+
+table {
+    font-family: 'Roboto+Serif', Georgia, 'Times New Roman', Times, serif;
+    font-size: 1rem;
+    width: 343px;
+    border-radius: 20px;
+    border: 2px solid var(--color-secondary);
+    box-shadow: 0px 4px 16px rgba(0, 0, 0, 0.4);
+    margin: 16px auto;
+    padding: 16px;
+}
+
+table thead {
+    font-size: larger;
+    text-align: left;
+}
+
+fieldset {
+    border: none;
+}
+
+form {
+    box-sizing: border-box;
+    color: var(--color-text);
+    font-family: 'MuseoModerno';
+    text-align: left;
+    margin: 16px auto;
+    max-width: 600px;
+    padding: 16px;
+}
+  
+input, 
+select{
+    border: 2px solid var(--color-secondary);
+    background-color: var(--color-background);
+    color: var(--color-text);
+    font-size: larger;
+    font-family: 'Roboto+Serif';
+    padding: 8px;
+    width: 100%;
+    border-radius: 20px;
+}
+
+.cta-button {
+    display: flex;
+    justify-content: center;
+}

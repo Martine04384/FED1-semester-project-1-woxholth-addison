@@ -1,0 +1,10 @@
+@import url("./reset.css");
+@import url("./variables.css");
+
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 600px;
+    padding: 0 16px;
+}

@@ -1,0 +1,90 @@
+@import url("./reset.css");
+@import url("./variables.css");
+
+table {
+    margin: 16px auto;
+    font-family: 'Roboto+Serif', Georgia, 'Times New Roman', Times, serif;
+    font-size: 1rem;
+}
+
+table thead th {
+    font-size: larger;
+}
+
+.cta-button {
+    display: flex;
+    justify-content: center;
+}
+
+.qty-container {
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+    width: 110px;
+    border-radius: 20px;
+    box-shadow: 0px 4px 16px rgba(0, 0, 0, 0.4);
+    font-family: 'MuseoModerno';
+}
+    
+.qty-count-minus,
+.qty-count-plus {
+    width: 40px;
+    height: 24px;
+    font-size: 1rem;
+    font-weight: bold;
+    color: var(--color-text);
+    border: none;
+    cursor: pointer;
+    background-color: var(--color-primary);
+    transition: background-color 0.3s ease;
+}
+
+.qty-count-minus:hover,
+.qty-count-plus:hover {
+    background-color: var(--color-secondary);
+}
+
+.qty-count {
+    width: 40px;
+    font-size: 1rem;
+    text-align: center;
+    appearance: textfield;
+}
+    
+.qty-count::-webkit-inner-spin-button, 
+    .qty-count::-webkit-outer-spin-button {
+    -webkit-appearance: none; 
+    margin: 0;
+}
+
+.card {
+    /*height: 610px;*/
+    width: 343px;
+    border-radius: 20px;
+    border: 2px solid var(--color-secondary);
+    box-shadow: 0px 4px 16px rgba(0, 0, 0, 0.4);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 16px auto;
+    padding: 16px;
+}
+
+.card-container {
+    height: 445px;
+    width: 292px;
+    margin: 16px 16px;
+    overflow: hidden;
+}
+
+.card img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 20px;
+}
+
+
+
+
+
