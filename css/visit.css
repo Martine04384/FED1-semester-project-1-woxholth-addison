@@ -80,11 +80,14 @@
     }
 
     .museum-info {
-        display: flex;
-        justify-content: center;
-        width: 95%;
+        /*display: flex;
+        justify-content: center;*/
+        width: 95vw;
         max-width: 1000px;
-        margin: 0;
+        margin: 16px auto;
+        display: grid;
+        grid-template-rows: auto;
+        grid-template-columns: auto 1fr;
     }
 
     .museum {
@@ -93,8 +96,9 @@
     }
 
     .large {
-        width: 95%;
+        width: 95vw;
         max-width: 1000px;
+        margin: 16px auto;
     }
 
     .guided-tours {
@@ -112,6 +116,7 @@
 
     .info-section {
         display: flex;
+        width: 95vw;
         max-width: 1000px;
     }
 }
