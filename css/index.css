@@ -43,7 +43,7 @@
     background-color: var(--color-secondary);
 }
 
-@media screen and (max-width:770px) {
+@media screen and (max-width:729px) {
     .container-header {
         display: flex;
         justify-content: center;
@@ -51,7 +51,7 @@
     }
 }
 
-@media screen and (min-width:771px) {
+@media screen and (min-width:730px) {
     .container-header h1 span {
         display: inline-block;
         padding: 16px;
