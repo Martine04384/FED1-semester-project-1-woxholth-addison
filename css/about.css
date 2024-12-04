@@ -1,2 +1,21 @@
 @import url("./reset.css");
 @import url("./variables.css");
+
+.about__text {
+    margin: 16px auto;
+    max-width: 800px;
+    padding: 0 16px;
+}
+.card-container__about {
+    height: 343px;
+    width: 343px;
+    margin: 16px auto;
+    overflow: hidden;
+}
+
+.card-container__about img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 20px;
+}
