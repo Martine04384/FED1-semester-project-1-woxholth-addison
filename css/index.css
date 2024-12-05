@@ -37,6 +37,7 @@
     right: 0;
     bottom: 0;
     background-color: rgba(0, 0, 0, 0.5); /* Dark overlay */
+    border-radius: 20px;
     z-index: 0; /* Behind the text */
 }
 
@@ -50,6 +51,7 @@
     color: var(--color-secondary);
     border-radius: 5px;
     z-index: 999;
+    position: relative;
 }
 
 .cta-button__header {
