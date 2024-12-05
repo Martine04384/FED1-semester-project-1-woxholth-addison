@@ -2,7 +2,6 @@
 @import url("./variables.css");
 
 .card {
-    /*height: 610px;*/
     width: 343px;
     border-radius: 20px;
     border: 2px solid var(--color-secondary);
@@ -26,4 +25,39 @@
     height: 100%;
     object-fit: cover;
     border-radius: 20px;
+}
+
+@media screen and (min-width:730px) {
+    .medium {
+        height: 250px;
+        width: 100%;
+        max-width: 500px;
+    }
+    
+    .large {
+        width: 100%;
+        max-width: 500px;
+    }  
+
+    .exhibition__flex {
+        display: flex;
+        flex-direction: row;
+        margin: 16px auto;
+        gap: 16px;
+        width: 95vw;
+        max-width: 1000px;
+    }
+
+    .x-large {
+        width: 95vw;
+        max-width: 1000px;
+        margin: 16px auto;
+    }
+
+    .x-large-img {
+        width: 100%;
+        max-width: 900px;
+        margin: 0 auto;
+    }
+
 }

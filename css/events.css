@@ -31,3 +31,46 @@
 .card-container__small {
     height: 200px;
 }
+
+.cta-button {
+    display: flex;
+    justify-content: center;
+}
+
+@media screen and (min-width:730px) {
+    .medium {
+        height: 250px;
+        width: 100%;
+        max-width: 500px;
+    }
+    
+    .large {
+        width: 100%;
+        max-width: 500px;
+    }  
+
+    .events__flex {
+        display: flex;
+        flex-direction: row;
+        margin: 16px auto;
+        gap: 16px;
+        width: 95vw;
+        max-width: 1000px;
+    }
+
+    .card-vertical {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+    
+    .upcoming-events {
+        width: 95vw;
+        max-width: 1000px;
+        margin: 16px auto;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr;
+        gap: 40px;
+    }
+}
