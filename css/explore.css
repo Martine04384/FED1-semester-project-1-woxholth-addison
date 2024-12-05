@@ -28,6 +28,11 @@
     border-radius: 20px;
 }
 
+.cta-button {
+    display: flex;
+    justify-content: center;
+}
+
 @media screen and (min-width:730px) {
     .card-vertical {
         display: flex;
