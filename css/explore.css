@@ -3,7 +3,6 @@
 
 
 .card {
-    /*height: 610px;*/
     width: 343px;
     border-radius: 20px;
     border: 2px solid var(--color-secondary);
@@ -28,3 +27,47 @@
     object-fit: cover;
     border-radius: 20px;
 }
+
+@media screen and (min-width:730px) {
+    .card-vertical {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+    
+    .kids {
+        display: grid;
+        grid-template-columns: 2fr 1fr;
+        grid-template-rows: auto auto;
+        width: 95vw;
+        max-width: 1000px;
+        margin: 16px auto;
+        gap: 16px;
+    }
+
+    .large {
+        width: 100%;
+        max-width: 600px;
+    }   
+    
+    .text {
+        height: 100%;
+    }
+
+    .teachers {
+        width: 95vw;
+        max-width: 1000px;
+        margin: 16px auto;
+    }
+
+    .researchers {
+        width: 95vw;
+        max-width: 1000px;
+        margin: 16px auto;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr;
+        gap: 40px;
+    }
+}
+

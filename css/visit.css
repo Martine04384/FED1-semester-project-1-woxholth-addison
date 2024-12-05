@@ -118,5 +118,6 @@
         display: flex;
         width: 95vw;
         max-width: 1000px;
+        margin: 16px auto;
     }
 }
