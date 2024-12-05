@@ -200,6 +200,7 @@
     .container-header h1 span {
         display: inline-block;
         padding: 16px;
+        position: relative;
     }
 
     .container-header h1 {
