@@ -187,3 +187,8 @@ footer a {
   font-family: 'MuseoModerno';
   font-size: 1rem;
 }
+
+footer a:hover {
+  background-color: var(--color-secondary);
+  padding: 0 8px;
+}
