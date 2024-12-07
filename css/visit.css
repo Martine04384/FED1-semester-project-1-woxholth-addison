@@ -38,6 +38,10 @@
     margin: 16px auto;
 }
 
+.info p {
+    margin: 0 auto;
+}
+
 .map-container {
     width: 292px;
     overflow: hidden;
