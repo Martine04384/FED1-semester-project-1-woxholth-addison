@@ -36,7 +36,7 @@
     left: 0;
     right: 0;
     bottom: 0;
-    background-color: rgba(0, 0, 0, 0.2); /* Dark overlay */
+    background-color: rgba(0, 0, 0, 0.1); /* Dark overlay */
     border-radius: 20px;
     z-index: 0; /* Behind the text */
 }
@@ -74,7 +74,7 @@
 }
 
 .slogan {
-    width: 95vw;
+    width: 95%;
     max-width: 1000px;
     margin: 16px auto;
     gap: 16px;
@@ -110,11 +110,6 @@
     border-radius: 20px;
 }
 
-.welcome {
-    height: auto;
-    width: 95%;
-}
-
 .horizontal {
     width: 90%;
     max-width: 400px;
@@ -128,7 +123,7 @@
     gap: 16px;
     margin: 0 auto;
     padding: 16px 16px;
-    width: 95vw;
+    width: 95%;
     min-width: 343px;
     max-width: 1000px;
 }
@@ -136,7 +131,7 @@
 .explore-card {
     min-width: 343px;
     max-width: 729px;
-    width: 95vw;    
+    width: 95%;    
     margin: 16px auto;
     display: flex;
     flex-direction: column;
@@ -147,7 +142,7 @@
     height: 160px;
     min-width: 343px;
     max-width: 729px;
-    width: 95vw;
+    width: 95%;
     overflow: hidden;
     border: 2px solid var(--color-secondary);
     box-shadow: 0px 4px 16px rgba(0, 0, 0, 0.4);
@@ -201,6 +196,7 @@
         position: relative;
         height: 85vh;
         width: 95%;
+        max-width: 1000px;
         margin: 16px auto;
         background-image: url('../assets/ABF404CC-25BA-4C87-B509-F059DD409383_1_201_a.jpg');
         background-size: cover; 
@@ -218,7 +214,7 @@
         left: 0;
         right: 0;
         bottom: 0;
-        background-color: rgba(0, 0, 0, 0.2); /* Dark overlay */
+        background-color: rgba(0, 0, 0, 0.1); /* Dark overlay */
         border-radius: 20px;
         z-index: 0; /* Behind the text */
     }
@@ -240,21 +236,14 @@
         display: grid;
         grid-template-columns: auto auto auto;
         grid-template-rows: auto;
-        gap: 40px;
-        width: 95%;
-        max-width: 1000px;
-        margin: 16px auto;
-    }
-
-    .welcome {
-        height: 600px;
+        gap: 80px;
         width: 95%;
         max-width: 1000px;
         margin: 16px auto;
     }
 
     .explore-card, .explore-card-container {
-        width: 95vw;
+        width: 95%;
         height: 400px;
         min-width: 700px;
         max-width: 1000px;
@@ -265,7 +254,7 @@
     }
 
     .map-container, .map-container-img-desktop{
-        width: 95vw;
+        width: 95%;
         min-width: 700px;
         max-width: 1000px;
     }
