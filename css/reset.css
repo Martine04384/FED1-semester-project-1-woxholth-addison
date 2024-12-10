@@ -75,6 +75,7 @@ nav,
   font-size: 32px;
   display: block;
   color: var(--color-text);
+  padding-left: 16px;
 }
 
 #menue-checkbox:checked ~ nav {

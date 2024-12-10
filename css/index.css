@@ -191,6 +191,7 @@ p {
     }
 }
 
+
 @media screen and (min-width:730px)  {
     .container-header {
         position: relative;
@@ -227,7 +228,7 @@ p {
     .container-header h1 {
         display: flex;
         justify-content: center;
-        z-index: 999;
+        z-index: 1;
         position: relative;
         margin-top: 16px;
     }   
@@ -257,6 +258,8 @@ p {
         width: 95vw;
         min-width: 700px;
         max-width: 1000px;
+        overflow: hidden;
+        border-radius: 20px;
     }
 }
 
