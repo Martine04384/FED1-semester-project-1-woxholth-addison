@@ -14,7 +14,7 @@
     padding: 16px;
 }
 
-.card-container {
+.card-image-container {
     height: 445px;
     width: 292px;
     margin: 16px 16px;
@@ -34,12 +34,6 @@
 }
 
 @media screen and (min-width:730px) {
-    .card-vertical {
-        display: flex;
-        flex-direction: column;
-        justify-content: space-between;
-    }
-    
     .kids {
         display: grid;
         grid-template-columns: 2fr 1fr;
@@ -49,11 +43,17 @@
         margin: 16px auto;
         gap: 16px;
     }
-
+    
     .large {
         width: 100%;
         max-width: 600px;
     }   
+
+    .card-vertical {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
     
     .text {
         height: 100%;

@@ -11,11 +11,6 @@ table thead th {
     font-size: larger;
 }
 
-.cta-button {
-    display: flex;
-    justify-content: center;
-}
-
 .qty-container {
     display: flex;
     align-items: center;
@@ -57,8 +52,12 @@ table thead th {
     margin: 0;
 }
 
+.cta-button {
+    display: flex;
+    justify-content: center;
+}
+
 .card {
-    /*height: 610px;*/
     width: 343px;
     border-radius: 20px;
     border: 2px solid var(--color-secondary);
@@ -70,7 +69,7 @@ table thead th {
     padding: 16px;
 }
 
-.card-container {
+.card-image-container {
     height: 445px;
     width: 292px;
     margin: 16px 16px;
@@ -85,7 +84,6 @@ table thead th {
 }
 
 @media screen and (min-width:1200px) {
-
     .flex {
         display: flex;
         flex-direction: row;
@@ -97,7 +95,3 @@ table thead th {
 
     }
 }
-
-
-
-

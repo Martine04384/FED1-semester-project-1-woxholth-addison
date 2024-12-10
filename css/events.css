@@ -2,7 +2,6 @@
 @import url("./variables.css");
 
 .card {
-    /*height: 610px;*/
     width: 343px;
     border-radius: 20px;
     border: 2px solid var(--color-secondary);
@@ -14,7 +13,7 @@
     padding: 16px;
 }
 
-.card-container {
+.card-image-container {
     height: 445px;
     width: 292px;
     margin: 16px 16px;
@@ -28,7 +27,7 @@
     border-radius: 20px;
 }
 
-.card-container__small {
+.card-image-container__small {
     height: 200px;
 }
 
@@ -38,16 +37,26 @@
 }
 
 @media screen and (min-width:730px) {
-    .medium {
-        height: 250px;
-        width: 100%;
-        max-width: 500px;
+    .upcoming-events {
+        width: 95vw;
+        max-width: 1000px;
+        margin: 16px auto;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr;
+        gap: 40px;
     }
-    
+
     .large {
         width: 100%;
         max-width: 500px;
-    }  
+    }
+   
+    .card-vertical {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
 
     .events__flex {
         display: flex;
@@ -57,20 +66,10 @@
         width: 95vw;
         max-width: 1000px;
     }
-
-    .card-vertical {
-        display: flex;
-        flex-direction: column;
-        justify-content: space-between;
-    }
-    
-    .upcoming-events {
-        width: 95vw;
-        max-width: 1000px;
-        margin: 16px auto;
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-        grid-template-rows: 1fr;
-        gap: 40px;
+   
+    .card-image-container__small {
+        height: 250px;
+        width: 100%;
+        max-width: 500px;
     }
 }

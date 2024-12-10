@@ -1,6 +1,21 @@
 @import url("./reset.css");
 @import url("./variables.css");
 
+
+.check-out__container {
+    height: 343px;
+    width: 343px;
+    margin: 16px auto;
+    overflow: hidden;
+}
+
+.check-out__container img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 20px;
+}
+
 .cta-button {
     display: flex;
     justify-content: center;

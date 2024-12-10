@@ -13,7 +13,7 @@
     padding: 16px;
 }
 
-.card-container {
+.card-container-image {
     height: 445px;
     width: 292px;
     margin: 16px 16px;
@@ -28,6 +28,15 @@
 }
 
 @media screen and (min-width:730px) {
+    .exhibition__flex {
+        display: flex;
+        flex-direction: row;
+        margin: 16px auto;
+        gap: 16px;
+        width: 95vw;
+        max-width: 1000px;
+    }
+
     .medium {
         height: 250px;
         width: 100%;
@@ -38,15 +47,6 @@
         width: 100%;
         max-width: 500px;
     }  
-
-    .exhibition__flex {
-        display: flex;
-        flex-direction: row;
-        margin: 16px auto;
-        gap: 16px;
-        width: 95vw;
-        max-width: 1000px;
-    }
 
     .x-large {
         width: 95vw;
