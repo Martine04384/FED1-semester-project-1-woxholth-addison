@@ -74,7 +74,7 @@ nav,
 .hamburger-icon {
   font-size: 32px;
   display: block;
-  color: var(--color-background);
+  color: var(--color-text);
 }
 
 #menue-checkbox:checked ~ nav {
@@ -87,7 +87,7 @@ nav {
 
 nav a {
   text-decoration: none;
-  color: var(--color-background);
+  color: var(--color-text);
   text-align: center;
   font-family: 'MuseoModerno';
   font-size: 1.1875rem;
@@ -183,7 +183,7 @@ footer {
 footer a { 
   display: block;
   text-decoration: none;
-  color: var(--color-background);
+  color: var(--color-text);
   font-family: 'MuseoModerno';
   font-size: 1rem;
 }
