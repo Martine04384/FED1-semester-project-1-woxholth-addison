@@ -16,8 +16,3 @@ table thead {
     font-size: larger;
     text-align: left;
 }
-
-.cta-button {
-    display: flex;
-    justify-content: center;
-}

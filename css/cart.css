@@ -20,30 +20,3 @@ table thead {
 fieldset {
     border: none;
 }
-
-form {
-    box-sizing: border-box;
-    color: var(--color-text);
-    font-family: 'MuseoModerno';
-    text-align: left;
-    margin: 16px auto;
-    max-width: 600px;
-    padding: 16px;
-}
-  
-input, 
-select{
-    border: 2px solid var(--color-secondary);
-    background-color: var(--color-background);
-    color: var(--color-text);
-    font-size: larger;
-    font-family: 'Roboto+Serif';
-    padding: 8px;
-    width: 100%;
-    border-radius: 20px;
-}
-
-.cta-button {
-    display: flex;
-    justify-content: center;
-}
