@@ -1,6 +1,7 @@
 @import url("./reset.css");
 @import url("./variables.css");
 
+/*Table for tickets*/
 table {
     margin: 16px auto;
     font-family: 'Roboto+Serif', Georgia, 'Times New Roman', Times, serif;
@@ -11,6 +12,7 @@ table thead th {
     font-size: larger;
 }
 
+/* Counter for tickets*/
 .qty-container {
     display: flex;
     align-items: center;
@@ -24,7 +26,7 @@ table thead th {
 .qty-count-minus,
 .qty-count-plus {
     width: 40px;
-    height: 24px;
+    height: 40px;
     font-size: 1rem;
     font-weight: bold;
     color: var(--color-text);
@@ -41,6 +43,8 @@ table thead th {
 
 .qty-count {
     width: 40px;
+    height: 40px;
+    border: none;
     font-size: 1rem;
     text-align: center;
     appearance: textfield;
@@ -52,20 +56,6 @@ table thead th {
     margin: 0;
 }
 
-.card-image-container {
-    height: 445px;
-    width: 292px;
-    margin: 16px 16px;
-    overflow: hidden;
-}
-
-.card img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    border-radius: 20px;
-}
-
 @media screen and (min-width:1200px) {
     .flex {
         display: flex;
@@ -75,6 +65,5 @@ table thead th {
         width: 95vw;
         max-width: 1000px;
         margin: 16px auto;
-
     }
 }
