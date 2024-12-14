@@ -20,3 +20,13 @@ table thead {
 fieldset {
     border: none;
 }
+
+@media screen and (min-width:730px) {
+    table {
+        width: 600px;
+    }
+
+    form, fieldset {
+        padding: 0;
+    }
+}

@@ -30,7 +30,7 @@
     .teachers {
         width: 95vw;
         max-width: 1000px;
-        margin: 16px auto;
+        align-items: flex-start;
     }
 
     .researchers {
