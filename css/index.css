@@ -42,7 +42,7 @@
 
 .cta-button__header {
     position: absolute;
-    bottom: 100px; 
+    bottom: 10vh; 
     left: 50%; 
     transform: translateX(-50%); 
     display: block;
@@ -167,10 +167,6 @@ p {
         align-items: flex-start;
     }
 
-    .cta-button__header {
-        bottom: 100px;
-    }
-
     .map-container-img-desktop {
         display:none;
     }
@@ -218,7 +214,7 @@ p {
     }   
 
     .cta-button__header {
-        bottom: 100px; 
+        bottom: 12vh; 
     }
 
     .horizontal {
@@ -257,8 +253,8 @@ p {
     }
 }
 
-@media screen and (min-width:1024px) {
+@media screen and (min-width:1000px) {
     .cta-button__header {
-        bottom: 60px; 
+        bottom: 5vh; 
     }
 }
