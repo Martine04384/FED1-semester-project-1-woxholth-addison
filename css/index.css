@@ -42,7 +42,7 @@
 
 .cta-button__header {
     position: absolute;
-    bottom: 50px; 
+    bottom: 100px; 
     left: 50%; 
     transform: translateX(-50%); 
     display: block;
@@ -165,10 +165,6 @@ p {
         display: flex;
         justify-content: center;
         align-items: flex-start;
-    }
-
-    .cta-button__header {
-        bottom: 80px; 
     }
 
     .map-container-img-desktop {
