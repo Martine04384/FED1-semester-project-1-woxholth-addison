@@ -33,6 +33,10 @@
         align-items: flex-start;
     }
 
+    h3 {
+        margin: 0 auto;
+    }
+
     .researchers {
         width: 95vw;
         max-width: 1000px;
