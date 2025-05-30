@@ -1,6 +1,6 @@
 # FED1 Semester project - Community Science Museum
 
-![Screenshot of homepage](./assets/screenshot-community-science-museum-homepage.jpg.jpg)
+![Screenshot of homepage](./assets/screenshot-community-science-museum-homepage.jpg)
 
 A responsive website promoting the interactive Community Science Museum, designed for children and families.
 
