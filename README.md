@@ -1,8 +1,8 @@
-# FED1-semester-project-1-woxholth-addison
+# FED1 Semester project - Community Science Museum
 
-![Screenshot of homepage](./assets/screenshoot-community-science-museum.jpg)
+![Screenshot of homepage](./assets/screenshot-community-science-museum-homepage.jpg.jpg)
 
-A responsive website promoting the interactive fictional Community Science Museum, designed for children and families.
+A responsive website promoting the interactive Community Science Museum, designed for children and families.
 
 ## Description
 
@@ -14,18 +14,19 @@ The project was planned and tracked using a GitHub Project Board to stay organiz
 
 ## Built with
 
+- Figma
 - HTML
 - CSS
 - GitHub
 
 ## Installing
 
-Clone the repository:
-gh repo clone Martine04384/FED1-semester-project-1-woxholth-addison
+Clone the repository: gh repo clone Martine04384/FED1-semester-project-1-woxholth-addison
 
 ## Running
 
-This is a static HTML/CSS page — no installation needed.
+This is a static page — no installation needed.
+
 You can view the live version here:  
 [Live site on GitHub Pages](https://martine04384.github.io/FED1-semester-project-1-woxholth-addison/)
 
