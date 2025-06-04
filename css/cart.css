@@ -1,47 +1,96 @@
 @import url("./reset.css");
 @import url("./variables.css");
 
-table {
-    font-family: 'Roboto+Serif', Georgia, 'Times New Roman', Times, serif;
-    font-size: 1rem;
-    border-radius: 20px;
-    border: 2px solid var(--color-secondary);
-    box-shadow: 0px 4px 16px rgba(0, 0, 0, 0.4);
-    margin: 16px auto;
-    padding: 16px;
-    width: 95%;
-    max-width: 600px;
+.order-summary {
+  border-radius: 20px;
+  border: 2px solid var(--color-secondary);
+  box-shadow: 0px 4px 16px rgba(0, 0, 0, 0.4);
+  margin: 16px auto;
+  padding: 16px;
+  max-width: 600px;
+  background-color: var(--color-background);
+  box-shadow: 0px 4px 16px rgba(0, 0, 0, 0.4);
 }
 
-table thead {
-  color: var(--color-text);
-  font-family: "MuseoModerno", "Lucida Sans", "Lucida Sans Regular",
-    "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
-  font-weight: 500;
-  font-size: 1.625rem;
-  text-align: center;
-}
-
-table thead th {
-  border-bottom: 2px solid var(--color-secondary);
-}
-
-.section-heading td {
-  color: var(--color-text);
-  font-family: "MuseoModerno", "Lucida Sans", "Lucida Sans Regular",
-    "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
-  font-weight: 500;
+.cart-header {
+  display: grid;
+  grid-template-columns: 2fr 1fr 1fr 1fr;
+  align-items: center;
+  padding: 20px;
+  gap: 10px; 
+  margin-bottom: 10px;
   text-align: left;
-  padding: 20px 20px;
+  font-weight: bold;
+  font-family: "MuseoModerno", sans-serif;
+  color: var(--color-text);
+  border-bottom: solid 2px var(--color-secondary);
 }
 
-table tbody tr td{
-    padding-left: 20px;
-    padding-bottom: 20px;
+.cart-row {
+  border-bottom: solid 2px var(--color-secondary);
+  display: grid;
+  grid-template-columns: 2fr 1fr 1fr 1fr;
+  align-items: center;
+  margin-bottom: 10px;
+  padding: 20px;
+  text-align: center;
+  gap: 10px; 
 }
 
-.section-heading.total td{
-  border-top: 2px solid var(--color-secondary);
+.order-summary div:last-child {
+  font-weight: bold;
+  font-size: 1.5rem;
+  margin-top: 20px;
+  padding: 20px;
+  display: grid;
+  grid-template-columns: 1fr auto;
+  justify-content: space-between;
+}
+
+/* Quantity and remove buttons */
+.order-summary button {
+  background-color: var(--color-primary);
+  color: var(--color-text);
+  font-size: 1rem;
+  font-family: "MuseoModerno", "Lucida Sans", "Lucida Sans Regular",
+    "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  border: none;
+  border-radius: 20px;
+  padding: 4px 16px;
+  cursor: pointer;
+  box-shadow: 0px 4px 16px rgba(0, 0, 0, 0.4);
+}
+
+.order-summary button:hover {
+  background-color: var(--color-secondary);
+}
+
+.quantity-buttons{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+
+.order-summary .quantity-buttons button {
+  width: 40px;
+  height: 40px;
+}
+
+/* Updated styling after adding counters*/
+@media (max-width: 600px) {
+  .cart-header {
+    display: none;
+  }
+  
+  .cart-row  {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+  
 }
 
 form {

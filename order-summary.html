@@ -41,9 +41,10 @@
     </header>
     <main>
         <h1>Order summary</h1>
+        <!--Help from Chat GTP to make table more accessible for screen readers
         <table>
             <thead>
-                <tr> <!--Help from Chat GTP to make table more accessible for screen readers-->
+                <tr>
                     <th scope="col">Event</th>
                     <th scope="col">Tickets</th>
                 </tr>
@@ -85,7 +86,12 @@
                     <td>$40</td>
                 </tr>
             </tbody>
-        </table>
+        </table> -->
+
+        <section class="order-summary">
+            <h2>Your order summary</h2>
+        </section>
+
         <a href="exhibitions.html" class="cta-button">Back to exhibitions</a>
     </main>
     <footer>
@@ -94,6 +100,14 @@
         <a href="get-involved.html">Get involved</a>
         <a href="visit.html">Visit</a>
     </footer>
+
+    <!--User feedback global-->
+    <dialog id="dialog">
+        <p id="dialog-message"></p>
+        <button id="close-dialog" class="cta-button">Close</button>
+    </dialog>
+
+    <script type="module" src="./js/order-summary.js"></script>
 </body>
 
 </html>

@@ -43,9 +43,13 @@
         <h1>Cart</h1>
         <section>
             <h2>Order summary</h2>
+            <div class="order-summary">
+            </div>
+
+            <!-- Replace code with js - Help from Chat GTP to make table more accessible for screen readers
             <table>
                 <thead>
-                    <tr> <!--Help from Chat GTP to make table more accessible for screen readers-->
+                    <tr> 
                         <th scope="col">Event</th>
                         <th scope="col">Tickets</th>
                     </tr>
@@ -87,28 +91,33 @@
                         <td>$40</td>
                     </tr>
                 </tbody>
-            </table>
+            </table> -->
+
         </section>
         <section>
             <h2>Contact and billing details</h2>
-            <form class="form" action="check-out-success.html">
+            <form id="form" class="form"">
                 <fieldset>
-                    <label for="name">Full name</label>
-                    <input type="text" name="name" id="name" class="form__input" required>
-                    <label for="email">Email</label>
-                    <input type="email" name="email" id="email" class="form__input" required>
-                    <label for="address">Address</label>
-                    <input type="text" name="address" id="address" class="form__input" required>
-                    <label for="postalcode">Postal code</label>
-                    <input type="number" name="postalcode" id="postalcode" class="form__input" required>
-                    <label for="city">City</label>
-                    <input type="text" name="city" id="city" class="form__input" required>
-                    <label for="cardnumber">Cardnumber</label>
-                    <input type="number" name="cardnumber" id="cardnumber" class="form__input" required>
-                    <label for="expiry">Expiry</label>
-                    <input type="number" name="expiry" id="expiry" class="form__input" required>
-                    <label for="cvc">CVC</label>
-                    <input type="number" name="cvc" id="cvc" class="form__input" required>
+                    <label for=" name">Full name</label>
+                <input type="text" name="name" id="name" class="form__input" required>
+                <label for="email">Email</label>
+                <input type="email" name="email" id="email" class="form__input" required>
+                <label for="address">Address</label>
+                <input type="text" name="address" id="address" class="form__input" required>
+                <label for="streetnumber">Street number</label>
+                <input type="number" name="streetnumber" id="streetnumber" class="form__input" required>
+                <label for="postalcode">Postal code</label>
+                <input type="number" name="postalcode" id="postalcode" class="form__input" required>
+                <label for="city">City</label>
+                <input type="text" name="city" id="city" class="form__input" required>
+                <label for="country">Country</label>
+                <input type="text" name="country" id="country" class="form__input" required>
+                <label for="cardnumber">Cardnumber</label>
+                <input type="number" name="cardnumber" id="cardnumber" class="form__input" required>
+                <label for="expiry">Expiry</label>
+                <input type="number" name="expiry" id="expiry" class="form__input" required>
+                <label for="cvc">CVC</label>
+                <input type="number" name="cvc" id="cvc" class="form__input" required>
                 </fieldset>
                 <button type="submit" class="cta-button">Confirm order</button>
             </form>
@@ -121,6 +130,14 @@
         <a href="get-involved.html">Get involved</a>
         <a href="visit.html">Visit</a>
     </footer>
+
+    <!--User feedback global-->
+    <dialog id="dialog">
+        <p id="dialog-message"></p>
+        <button id="close-dialog" class="cta-button">Close</button>
+    </dialog>
+
+    <script type="module" src="./js/cart.js"></script>
 
 </body>
 

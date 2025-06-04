@@ -57,11 +57,18 @@
                         <td>Free</td>
                         <td>
                             <div class="qty-container">
-                                <button type="button" class="qty-count-minus"
+                                <button type="button" class="qty-count-minus">-</button>
+                                <input type="number" class="qty-count" min="0" value="0" step="1" aria-label="Quantity"
+                                    data-id="guided-kids" data-title="Guided Tour - Kids" data-price="0" />
+                                <button type="button" class="qty-count-plus">+</button>
+                                <!--
+                                    <button type="button" class="qty-count-minus"
                                     onclick="this.nextElementSibling.stepDown()">-</button>
-                                <input type="number" class="qty-count" min="0" value="0" step="1" aria-label="Quantity">
-                                <button type="button" class="qty-count-plus"
+                                    <input type="number" class="qty-count" min="0" value="0" step="1"
+                                    aria-label="Quantity">
+                                    <button type="button" class="qty-count-plus"
                                     onclick="this.previousElementSibling.stepUp()">+</button>
+                                -->
                             </div>
                         </td>
                     </tr>
@@ -70,11 +77,10 @@
                         <td>$5</td>
                         <td>
                             <div class="qty-container">
-                                <button type="button" class="qty-count-minus"
-                                    onclick="this.nextElementSibling.stepDown()">-</button>
-                                <input type="number" class="qty-count" min="0" value="0" step="1" aria-label="Quantity">
-                                <button type="button" class="qty-count-plus"
-                                    onclick="this.previousElementSibling.stepUp()">+</button>
+                                <button type="button" class="qty-count-minus">-</button>
+                                <input type="number" class="qty-count" min="0" value="0" step="1" aria-label="Quantity"
+                                    data-id="guided-students" data-title="Guided Tour - Students" data-price="5" />
+                                <button type="button" class="qty-count-plus">+</button>
                             </div>
                         </td>
                     </tr>
@@ -83,17 +89,16 @@
                         <td>$10</td>
                         <td>
                             <div class="qty-container">
-                                <button type="button" class="qty-count-minus"
-                                    onclick="this.nextElementSibling.stepDown()">-</button>
-                                <input type="number" class="qty-count" min="0" value="0" step="1" aria-label="Quantity">
-                                <button type="button" class="qty-count-plus"
-                                    onclick="this.previousElementSibling.stepUp()">+</button>
+                                <button type="button" class="qty-count-minus">-</button>
+                                <input type="number" class="qty-count" min="0" value="0" step="1" aria-label="Quantity"
+                                    data-id="guided-adults" data-title="Guided Tour - Adults" data-price="10" />
+                                <button type="button" class="qty-count-plus">+</button>
                             </div>
                         </td>
                     </tr>
                 </tbody>
             </table>
-            <a href="cart.html" class="cta-button">Add to cart</a>
+            <button type="button" class="cta-button add-to-cart">Add to cart</button>
         </section>
         <section>
             <h2>Book Special Events</h2>
@@ -118,12 +123,11 @@
                                 <td>Free</td>
                                 <td>
                                     <div class="qty-container">
-                                        <button type="button" class="qty-count-minus"
-                                            onclick="this.nextElementSibling.stepDown()">-</button>
+                                        <button type="button" class="qty-count-minus">-</button>
                                         <input type="number" class="qty-count" min="0" value="0" step="1"
-                                            aria-label="Quantity">
-                                        <button type="button" class="qty-count-plus"
-                                            onclick="this.previousElementSibling.stepUp()">+</button>
+                                            aria-label="Quantity" data-id="night-kids"
+                                            data-title="Night in the Museum - Kids" data-price="0" />
+                                        <button type="button" class="qty-count-plus">+</button>
                                     </div>
                                 </td>
                             </tr>
@@ -132,12 +136,11 @@
                                 <td>$5</td>
                                 <td>
                                     <div class="qty-container">
-                                        <button type="button" class="qty-count-minus"
-                                            onclick="this.nextElementSibling.stepDown()">-</button>
+                                        <button type="button" class="qty-count-minus">-</button>
                                         <input type="number" class="qty-count" min="0" value="0" step="1"
-                                            aria-label="Quantity">
-                                        <button type="button" class="qty-count-plus"
-                                            onclick="this.previousElementSibling.stepUp()">+</button>
+                                            aria-label="Quantity" data-id="night-students"
+                                            data-title="Night in the Museum - Students" data-price="5" />
+                                        <button type="button" class="qty-count-plus">+</button>
                                     </div>
                                 </td>
                             </tr>
@@ -146,18 +149,17 @@
                                 <td>$10</td>
                                 <td>
                                     <div class="qty-container">
-                                        <button type="button" class="qty-count-minus"
-                                            onclick="this.nextElementSibling.stepDown()">-</button>
+                                        <button type="button" class="qty-count-minus">-</button>
                                         <input type="number" class="qty-count" min="0" value="0" step="1"
-                                            aria-label="Quantity">
-                                        <button type="button" class="qty-count-plus"
-                                            onclick="this.previousElementSibling.stepUp()">+</button>
+                                            aria-label="Quantity" data-id="night-adults"
+                                            data-title="Night in the Museum - Adults" data-price="10" />
+                                        <button type="button" class="qty-count-plus">+</button>
                                     </div>
                                 </td>
                             </tr>
                         </tbody>
                     </table>
-                    <a href="cart.html" class="cta-button">Add to cart</a>
+                    <button type="button" class="cta-button add-to-cart">Add to cart</button>
                 </article>
                 <article class="card">
                     <div class="card-image-container">
@@ -179,12 +181,11 @@
                                 <td>Free</td>
                                 <td>
                                     <div class="qty-container">
-                                        <button type="button" class="qty-count-minus"
-                                            onclick="this.nextElementSibling.stepDown()">-</button>
+                                        <button type="button" class="qty-count-minus">-</button>
                                         <input type="number" class="qty-count" min="0" value="0" step="1"
-                                            aria-label="Quantity">
-                                        <button type="button" class="qty-count-plus"
-                                            onclick="this.previousElementSibling.stepUp()">+</button>
+                                            aria-label="Quantity" data-id="aero-kids"
+                                            data-title="Professor of Aeronautics - Kids" data-price="0" />
+                                        <button type="button" class="qty-count-plus">+</button>
                                     </div>
                                 </td>
                             </tr>
@@ -193,12 +194,11 @@
                                 <td>$5</td>
                                 <td>
                                     <div class="qty-container">
-                                        <button type="button" class="qty-count-minus"
-                                            onclick="this.nextElementSibling.stepDown()">-</button>
+                                        <button type="button" class="qty-count-minus">-</button>
                                         <input type="number" class="qty-count" min="0" value="0" step="1"
-                                            aria-label="Quantity">
-                                        <button type="button" class="qty-count-plus"
-                                            onclick="this.previousElementSibling.stepUp()">+</button>
+                                            aria-label="Quantity" data-id="aero-students"
+                                            data-title="Professor of Aeronautics - Students" data-price="5" />
+                                        <button type="button" class="qty-count-plus">+</button>
                                     </div>
                                 </td>
                             </tr>
@@ -207,18 +207,17 @@
                                 <td>$10</td>
                                 <td>
                                     <div class="qty-container">
-                                        <button type="button" class="qty-count-minus"
-                                            onclick="this.nextElementSibling.stepDown()">-</button>
+                                        <button type="button" class="qty-count-minus">-</button>
                                         <input type="number" class="qty-count" min="0" value="0" step="1"
-                                            aria-label="Quantity">
-                                        <button type="button" class="qty-count-plus"
-                                            onclick="this.previousElementSibling.stepUp()">+</button>
+                                            aria-label="Quantity" data-id="aero-adults"
+                                            data-title="Professor of Aeronautics - Adults" data-price="10" />
+                                        <button type="button" class="qty-count-plus">+</button>
                                     </div>
                                 </td>
                             </tr>
                         </tbody>
                     </table>
-                    <a href="cart.html" class="cta-button">Add to cart</a>
+                    <button type="button" class="cta-button add-to-cart">Add to cart</button>
                 </article>
                 <article class="card">
                     <div class="card-image-container">
@@ -240,12 +239,11 @@
                                 <td>Free</td>
                                 <td>
                                     <div class="qty-container">
-                                        <button type="button" class="qty-count-minus"
-                                            onclick="this.nextElementSibling.stepDown()">-</button>
+                                        <button type="button" class="qty-count-minus">-</button>
                                         <input type="number" class="qty-count" min="0" value="0" step="1"
-                                            aria-label="Quantity">
-                                        <button type="button" class="qty-count-plus"
-                                            onclick="this.previousElementSibling.stepUp()">+</button>
+                                            aria-label="Quantity" data-id="energetica-kids"
+                                            data-title="Energetica Exhibition - Kids" data-price="0" />
+                                        <button type="button" class="qty-count-plus">+</button>
                                     </div>
                                 </td>
                             </tr>
@@ -254,12 +252,11 @@
                                 <td>$5</td>
                                 <td>
                                     <div class="qty-container">
-                                        <button type="button" class="qty-count-minus"
-                                            onclick="this.nextElementSibling.stepDown()">-</button>
+                                        <button type="button" class="qty-count-minus">-</button>
                                         <input type="number" class="qty-count" min="0" value="0" step="1"
-                                            aria-label="Quantity">
-                                        <button type="button" class="qty-count-plus"
-                                            onclick="this.previousElementSibling.stepUp()">+</button>
+                                            aria-label="Quantity" data-id="energetica-students"
+                                            data-title="Energetica Exhibition - Students" data-price="5" />
+                                        <button type="button" class="qty-count-plus">+</button>
                                     </div>
                                 </td>
                             </tr>
@@ -268,18 +265,17 @@
                                 <td>$10</td>
                                 <td>
                                     <div class="qty-container">
-                                        <button type="button" class="qty-count-minus"
-                                            onclick="this.nextElementSibling.stepDown()">-</button>
+                                        <button type="button" class="qty-count-minus">-</button>
                                         <input type="number" class="qty-count" min="0" value="0" step="1"
-                                            aria-label="Quantity">
-                                        <button type="button" class="qty-count-plus"
-                                            onclick="this.previousElementSibling.stepUp()">+</button>
+                                            aria-label="Quantity" data-id="energetica-adults"
+                                            data-title="Energetica Exhibition - Adults" data-price="10" />
+                                        <button type="button" class="qty-count-plus">+</button>
                                     </div>
                                 </td>
                             </tr>
                         </tbody>
                     </table>
-                    <a href="cart.html" class="cta-button">Add to cart</a>
+                    <button type="button" class="cta-button add-to-cart">Add to cart</button>
                 </article>
             </div>
         </Section>
@@ -291,6 +287,14 @@
         <a href="get-involved.html">Get involved</a>
         <a href="visit.html">Visit</a>
     </footer>
+
+    <!--User feedback global-->
+    <dialog id="dialog">
+        <p id="dialog-message"></p>
+        <button id="close-dialog" class="cta-button">Close</button>
+    </dialog>
+
+    <script type="module" src="./js/tickets.js"></script>
 </body>
 
 </html>
