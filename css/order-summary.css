@@ -4,17 +4,45 @@
 table {
     font-family: 'Roboto+Serif', Georgia, 'Times New Roman', Times, serif;
     font-size: 1rem;
-    width: 343px;
     border-radius: 20px;
     border: 2px solid var(--color-secondary);
     box-shadow: 0px 4px 16px rgba(0, 0, 0, 0.4);
     margin: 16px auto;
     padding: 16px;
+    width: 95%;
+    max-width: 600px;
 }
 
 table thead {
-    font-size: larger;
-    text-align: left;
+  color: var(--color-text);
+  font-family: "MuseoModerno", "Lucida Sans", "Lucida Sans Regular",
+    "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  font-weight: 500;
+  font-size: 1.625rem;
+  text-align: center;
+  
+}
+
+table thead th {
+  border-bottom: 2px solid var(--color-secondary);
+}
+
+.section-heading td {
+  color: var(--color-text);
+  font-family: "MuseoModerno", "Lucida Sans", "Lucida Sans Regular",
+    "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  font-weight: 500;
+  text-align: left;
+  padding: 20px 20px;
+}
+
+table tbody tr td{
+    padding-left: 20px;
+    padding-bottom: 20px;
+}
+
+.section-heading.total td{
+  border-top: 2px solid var(--color-secondary);
 }
 
 @media screen and (min-width:730px) {
