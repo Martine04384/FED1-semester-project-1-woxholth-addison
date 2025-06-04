@@ -1,97 +1,122 @@
 <!doctype html>
 <html lang="en">
-    <head>
-        <title>Exhibitions</title>
-        <meta charset="UTF-8">
-        <meta name="description" Content="Our exhibitions. Cosmology, evolution, biology, medicine, robotics, ai, ecology.">
-        <meta name="viewport" Content="width=device-width, initial-scale=1">
-        <!--google fonts-->
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=MuseoModerno:ital,wght@0,100..900;1,100..900&family=Roboto+Serif:ital,opsz,wght@0,8..144,100..900;1,8..144,100..900&display=swap" rel="stylesheet">
-        <!--CSS-->
-        <link rel="stylesheet" href="css/exhibitions.css">
-        <!--Favicon-->
-        <link rel="icon" type="image/png" sizes="16x16" href="assets/favicon.png">
-        <!--Icons-->
-        <script src="https://kit.fontawesome.com/87671af21f.js" crossorigin="anonymous"></script>
-    </head>
-    <body>
-        <header>
-            <a href="index.html" class="header-logo">
-                <img src="./assets/open-science-735787-removebg-preview-2.png" alt="Logo of earth with a keyhole and galaxies around.">
-            </a>
-            <label for="menue-checkbox" class="hamburger-icon" aria-label="Open navigation mobile">
-                <i class="fas fa-bars fa"></i>
-            </label>
-            <input type="checkbox" name="menue-checkbox" id="menue-checkbox">
-            <nav>
-                <a href="index.html">Home</a>
-                <a href="explore.html">Explore</a>
-                <a href="exhibitions.html" class="nav-active">Exhibitions</a>
-                <a href="events.html">Events</a>                
-                <a href="tickets.html">Tickets</a>
-                <a href="cart.html">Cart</a>
-            </nav>
-        </header>
-        <main> 
-            <h1>Exhibitions</h1>
-            <div class="exhibition__flex">
-                <section class="card large">
-                    <h2>Cosmology</h2>
-                    <div class="card-image-container medium">
-                        <img src="./assets/celso-405219.jpg" alt="The moon in different phases">
-                    </div>
-                    <p>Explore the wonders of our cosmos. Our fantastic exhibition, "The Sky Above Us", explores the night sky and what we can see and know about the universe around us. We'll locate the various constellations and galaxies that can be seen and learn a bit about the early navigators who used the stars to travel by.</p>
-                    <div class="card-image-container medium">
-                        <img src="./assets/andrew-ruiz-348421.jpg" alt="An astronaut in a spaceship">
-                    </div>
-                    <p>Follow the journey of our solar exploration: from early Arab traders, to Galileo's telescope, to the latest exploration of the planets in our solar system.</p>
-                </section>
-                <section class="card large">
-                    <h2>Evolution</h2>
-                    <div class="card-image-container large">
-                        <img src="./assets/toa-heftiba-412579.jpg" alt="A dinosaur skeleton in a big museum hall">
-                    </div>
-                    <p>For centuries, philosophers and scientists have wrestled with the question of our origins. Where do we come from and how did we get here? Since Darwin proposed his theory of evolution we have had a framework for exploring and understanding our place in this world.</p>
-                    <p>Discover the origins of life on this planet and how the species we know today have evolved our time. You can also take some time to meet a few of the creatures who didn't survive, including our Woolly Mammoth, the Dodos, and a number of dinosaurs too.</p>
-                </section>
-            </div>
-            <section class="card x-large">
-                <h2>Biology & Medicine</h2>
-                <div class="card-image-container x-large-img">
-                    <img src="./assets/samuel-zeller-113381.jpg" alt="A human anatomy figure">
-                </div>                
-                <p>From micro-organisms to the human body, major breakthroughs in biology are offering us unique insights into the great wonders of the tiny world.</p>
-                <p>For many people their life expectancy is much longer and their quality of life much improved, thanks to the growth of our understanding of medicine. Over a series of exhibits we explore the history of medicine and take a look at some major breakthroughs including the discovery of penicillin and the first heart transplant.</p>
-                <div class="card-image-container x-large-img">
-                    <img src="./assets/people-219985_1280.jpg" alt="A man looking into a microskope">
+
+<head>
+    <title>Exhibitions</title>
+    <meta charset="UTF-8">
+    <meta name="description" Content="Our exhibitions. Cosmology, evolution, biology, medicine, robotics, ai, ecology.">
+    <meta name="viewport" Content="width=device-width, initial-scale=1">
+    <!--google fonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=MuseoModerno:ital,wght@0,100..900;1,100..900&family=Roboto+Serif:ital,opsz,wght@0,8..144,100..900;1,8..144,100..900&display=swap"
+        rel="stylesheet">
+    <!--CSS-->
+    <link rel="stylesheet" href="css/exhibitions.css">
+    <!--Favicon-->
+    <link rel="icon" type="image/png" sizes="16x16" href="assets/favicon.png">
+    <!--Icons-->
+    <script src="https://kit.fontawesome.com/87671af21f.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <header>
+        <a href="index.html" class="header-logo">
+            <img src="./assets/open-science-735787-removebg-preview-2.png"
+                alt="Logo of earth with a keyhole and galaxies around.">
+        </a>
+        <label for="menu-checkbox" class="hamburger-icon" aria-label="Open navigation mobile">
+            <i class="fas fa-bars fa"></i>
+        </label>
+        <input type="checkbox" name="menu-checkbox" id="menu-checkbox">
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="explore.html">Explore</a>
+            <a href="exhibitions.html" class="nav-active">Exhibitions</a>
+            <a href="events.html">Events</a>
+            <a href="tickets.html">Tickets</a>
+            <a href="cart.html">Cart</a>
+        </nav>
+    </header>
+    <main>
+        <h1>Exhibitions</h1>
+        <div class="exhibition__flex">
+            <section class="card large">
+                <h2>Cosmology</h2>
+                <div class="card-image-container medium">
+                    <img src="./assets/celso-405219.jpg" alt="The moon in different phases">
                 </div>
-                <p>Many of our great medicinal discoveries have come not only from the lab, but also from observing animals in the wild. Often our fellow creatures have beat us to it.</p>
+                <p>Explore the wonders of our cosmos. Our fantastic exhibition, "The Sky Above Us", explores the night
+                    sky and what we can see and know about the universe around us. We'll locate the various
+                    constellations and galaxies that can be seen and learn a bit about the early navigators who used the
+                    stars to travel by.</p>
+                <div class="card-image-container medium">
+                    <img src="./assets/andrew-ruiz-348421.jpg" alt="An astronaut in a spaceship">
+                </div>
+                <p>Follow the journey of our solar exploration: from early Arab traders, to Galileo's telescope, to the
+                    latest exploration of the planets in our solar system.</p>
             </section>
-            <div class="exhibition__flex">
-                <section class="card large">
-                    <h2>Robotics and AI</h2>
-                    <div class="card-image-container large">
-                        <img src="./assets/william-bout-264826.jpg" alt="Art exhibition illustrating a network">
-                    </div>
-                    <p>The information revolution is here and robotics and artificial intelligence are the science of the future. From useful home applications of AI to industrial uses of robotics, the future is here. You can even say hello and shake the hand of Rob the Robot.</p>
-                </section>
-                <section class="card large">
-                    <h2>Ecology</h2>
-                    <div class="card-image-container large">
-                        <img src="./assets/open-science-735787.jpg" alt="Logo of earth with a keyhole and galaxies around.">
-                    </div>
-                    <p>As we learn more and more of the impact humans are having on the planet, the more important it becomes that scientists explore how to create a sustainable future not just for humans but for the whole planet.</p>
-                    <p>In our ecology section of the museum, we unpack the dangers we currently face including global warming, extinction of species, and pollution. But we also focus on the positive ways we can all contribute to a brighter future.</p>
-                </section>
+            <section class="card large">
+                <h2>Evolution</h2>
+                <div class="card-image-container large">
+                    <img src="./assets/toa-heftiba-412579.jpg" alt="A dinosaur skeleton in a big museum hall">
+                </div>
+                <p>For centuries, philosophers and scientists have wrestled with the question of our origins. Where do
+                    we come from and how did we get here? Since Darwin proposed his theory of evolution we have had a
+                    framework for exploring and understanding our place in this world.</p>
+                <p>Discover the origins of life on this planet and how the species we know today have evolved our time.
+                    You can also take some time to meet a few of the creatures who didn't survive, including our Woolly
+                    Mammoth, the Dodos, and a number of dinosaurs too.</p>
+            </section>
+        </div>
+        <section class="card x-large">
+            <h2>Biology & Medicine</h2>
+            <div class="card-image-container x-large-img">
+                <img src="./assets/samuel-zeller-113381.jpg" alt="A human anatomy figure">
             </div>
-        </main>
-        <footer>
-            <a href="about.html">About</a>
-            <a href="contact-us.html">Send us a message</a>
-            <a href="get-involved.html">Get involved</a>
-            <a href="visit.html">Visit</a>
-        </footer>
-    </body>
+            <p>From micro-organisms to the human body, major breakthroughs in biology are offering us unique insights
+                into the great wonders of the tiny world.</p>
+            <p>For many people their life expectancy is much longer and their quality of life much improved, thanks to
+                the growth of our understanding of medicine. Over a series of exhibits we explore the history of
+                medicine and take a look at some major breakthroughs including the discovery of penicillin and the first
+                heart transplant.</p>
+            <div class="card-image-container x-large-img">
+                <img src="./assets/people-219985_1280.jpg" alt="A man looking into a microskope">
+            </div>
+            <p>Many of our great medicinal discoveries have come not only from the lab, but also from observing animals
+                in the wild. Often our fellow creatures have beat us to it.</p>
+        </section>
+        <div class="exhibition__flex">
+            <section class="card large">
+                <h2>Robotics and AI</h2>
+                <div class="card-image-container large">
+                    <img src="./assets/william-bout-264826.jpg" alt="Art exhibition illustrating a network">
+                </div>
+                <p>The information revolution is here and robotics and artificial intelligence are the science of the
+                    future. From useful home applications of AI to industrial uses of robotics, the future is here. You
+                    can even say hello and shake the hand of Rob the Robot.</p>
+            </section>
+            <section class="card large">
+                <h2>Ecology</h2>
+                <div class="card-image-container large">
+                    <img src="./assets/open-science-735787.jpg" alt="Logo of earth with a keyhole and galaxies around.">
+                </div>
+                <p>As we learn more and more of the impact humans are having on the planet, the more important it
+                    becomes that scientists explore how to create a sustainable future not just for humans but for the
+                    whole planet.</p>
+                <p>In our ecology section of the museum, we unpack the dangers we currently face including global
+                    warming, extinction of species, and pollution. But we also focus on the positive ways we can all
+                    contribute to a brighter future.</p>
+            </section>
+        </div>
+    </main>
+    <footer>
+        <a href="about.html">About</a>
+        <a href="contact-us.html">Send us a message</a>
+        <a href="get-involved.html">Get involved</a>
+        <a href="visit.html">Visit</a>
+    </footer>
+</body>
+
 </html>

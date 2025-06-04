@@ -1,9 +1,11 @@
 @import url("./variables.css");
 
-*, *:before, *:after {
-    box-sizing: inherit;
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
 }
-  
+
 body {
   box-sizing: border-box;
   min-height: 100vh;
@@ -12,7 +14,7 @@ body {
   grid-template-rows: auto 1fr auto;
   background-color: var(--color-background);
 }
-  
+
 main {
   max-width: 1000px;
   width: 100%;
@@ -20,10 +22,15 @@ main {
   padding-bottom: 40px;
   padding-top: 40px;
 }
-  
+
 /* Text */
-h1, h2, h3, h4, h5 {
-  font-family: 'MuseoModerno', 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+h1,
+h2,
+h3,
+h4,
+h5 {
+  font-family: "MuseoModerno", "Lucida Sans", "Lucida Sans Regular",
+    "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
   font-weight: 500;
 }
 
@@ -51,7 +58,7 @@ h5 {
 }
 
 p {
-  font-family: 'Roboto+Serif', Georgia, 'Times New Roman', Times, serif;
+  font-family: "Roboto+Serif", Georgia, "Times New Roman", Times, serif;
   font-size: 1rem;
 }
 
@@ -64,11 +71,11 @@ header img {
 header {
   background-color: var(--color-primary);
 }
-  
+
 /* Navigation */
 
 nav,
-#menue-checkbox {
+#menu-checkbox {
   display: none;
 }
 
@@ -79,19 +86,19 @@ nav,
   padding-left: 16px;
 }
 
-#menue-checkbox:checked ~ nav {
+#menu-checkbox:checked ~ nav {
   display: block;
 }
 
 nav {
-  background-color: var(--color-primary); 
+  background-color: var(--color-primary);
 }
 
 nav a {
   text-decoration: none;
   color: var(--color-text);
   text-align: center;
-  font-family: 'MuseoModerno';
+  font-family: "MuseoModerno";
   font-size: 1.1875rem;
 }
 
@@ -120,14 +127,14 @@ nav a:hover {
   }
 
   nav {
-    position: absolute;  
+    position: absolute;
     top: 0;
     left: 0;
-    width: 100%; 
-    z-index: 999;  
-    margin-top: 32px; 
+    width: 100%;
+    z-index: 999;
+    margin-top: 32px;
   }
-    
+
   nav a {
     display: block;
   }
@@ -161,7 +168,7 @@ nav a:hover {
 .cta-button {
   width: 255px;
   margin: 16px auto;
-  font-family: 'MuseoModerno';
+  font-family: "MuseoModerno";
   font-size: 26px;
   text-align: center;
   text-decoration: none;
@@ -218,31 +225,31 @@ nav a:hover {
   object-fit: cover;
   border-radius: 20px;
 }
-  
+
 /* Forms */
 form {
   box-sizing: border-box;
   color: var(--color-text);
-  font-family: 'MuseoModerno';
+  font-family: "MuseoModerno";
   text-align: left;
   margin: 16px auto;
   max-width: 600px;
   padding: 16px;
 }
 
-input, 
-select, 
+input,
+select,
 textarea {
   border: 2px solid var(--color-secondary);
   background-color: var(--color-background);
   color: var(--color-text);
   font-size: larger;
-  font-family: 'Roboto+Serif';
+  font-family: "Roboto+Serif";
   padding: 8px;
   width: 100%;
   border-radius: 20px;
 }
-  
+
 /* footer */
 footer {
   width: 100%;
@@ -253,11 +260,11 @@ footer {
   padding: 16px;
 }
 
-footer a { 
+footer a {
   display: block;
   text-decoration: none;
   color: var(--color-text);
-  font-family: 'MuseoModerno';
+  font-family: "MuseoModerno";
   font-size: 1.1875rem;
   padding: 0 16px;
 }
