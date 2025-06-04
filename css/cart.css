@@ -4,7 +4,6 @@
 table {
     font-family: 'Roboto+Serif', Georgia, 'Times New Roman', Times, serif;
     font-size: 1rem;
-    width: 343px;
     border-radius: 20px;
     border: 2px solid var(--color-secondary);
     box-shadow: 0px 4px 16px rgba(0, 0, 0, 0.4);
@@ -15,8 +14,32 @@ table {
 }
 
 table thead {
-    font-size: larger;
-    text-align: left;
+  background-color: var(--color-primary);
+  color: var(--color-text);
+  font-family: "MuseoModerno", "Lucida Sans", "Lucida Sans Regular",
+    "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  font-weight: 500;
+  font-size: 1.625rem;
+  text-align: left;
+}
+
+table thead th {
+  padding: 12px;
+  border-bottom: 2px solid var(--color-secondary);
+}
+
+.section-heading td {
+  color: var(--color-text);
+  background-color: var(--color-secondary);
+  font-family: "MuseoModerno", "Lucida Sans", "Lucida Sans Regular",
+    "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  font-weight: 500;
+  text-align: left;
+  padding: 12px 12px;
+}
+
+table tbody tr td{
+    padding-left: 12px;
 }
 
 form {

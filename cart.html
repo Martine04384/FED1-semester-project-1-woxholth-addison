@@ -4,8 +4,8 @@
 <head>
     <title>Cart</title>
     <meta charset="UTF-8">
-    <meta name="description" Content="Shoppingcart for tickets">
-    <meta name="viewport" Content="width=device-width, initial-scale=1">
+    <meta name="description" content="Shoppingcart for tickets">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <!--google fonts-->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -45,12 +45,15 @@
             <h2>Order summary</h2>
             <table>
                 <thead>
-                    <tr>
-                        <th>Guided tours</th>
-                        <th>Tickets</th>
+                    <tr> <!--Help from Chat GTP to make table more accessible for screen readers-->
+                        <th scope="col">Event</th>
+                        <th scope="col">Tickets</th>
                     </tr>
                 </thead>
                 <tbody>
+                    <tr class="section-heading">
+                        <td colspan="2">Guided tours</td>
+                    </tr>
                     <tr>
                         <td>Kids</td>
                         <td>1</td>
@@ -63,14 +66,10 @@
                         <td>Price</td>
                         <td>$20</td>
                     </tr>
-                </tbody>
-                <thead>
-                    <tr>
-                        <th>Night in the museum</th>
-                        <th>Tickets</th>
+
+                    <tr class="section-heading">
+                        <td colspan="2">Night in the museum</td>
                     </tr>
-                </thead>
-                <tbody>
                     <tr>
                         <td>Kids</td>
                         <td>1</td>
@@ -83,25 +82,24 @@
                         <td>Price</td>
                         <td>$20</td>
                     </tr>
-                </tbody>
-                <thead>
-                    <tr>
-                        <th>Price in total</th>
-                        <th>$40</th>
+
+                    <tr class="section-heading">
+                        <td>Total</td>
+                        <td>$40</td>
                     </tr>
-                </thead>
+                </tbody>
             </table>
         </section>
         <section>
             <h2>Contact and billing details</h2>
-            <form class="form">
+            <form class="form" action="check-out-success.html">
                 <fieldset>
                     <label for="name">Full name</label>
                     <input type="text" name="name" id="name" class="form__input" required>
                     <label for="email">Email</label>
                     <input type="email" name="email" id="email" class="form__input" required>
-                    <label for="adress">Adress</label>
-                    <input type="adress" name="adress" id="adress" class="form__input" required>
+                    <label for="address">Address</label>
+                    <input type="text" name="address" id="address" class="form__input" required>
                     <label for="postalcode">Postal code</label>
                     <input type="number" name="postalcode" id="postalcode" class="form__input" required>
                     <label for="city">City</label>
@@ -113,8 +111,8 @@
                     <label for="cvc">CVC</label>
                     <input type="number" name="cvc" id="cvc" class="form__input" required>
                 </fieldset>
+                <button type="submit" class="cta-button">Confirm order</button>
             </form>
-            <a href="check-out-success.html" class="cta-button">Confirm order</a>
         </section>
     </main>
 

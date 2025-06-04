@@ -166,6 +166,7 @@ nav a:hover {
 
 /* CTA buttons*/
 .cta-button {
+  all: unset;
   width: 255px;
   margin: 16px auto;
   font-family: "MuseoModerno";
