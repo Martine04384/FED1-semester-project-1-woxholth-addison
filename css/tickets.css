@@ -62,8 +62,6 @@ table thead th {
         flex-direction: row;
         justify-content: center;
         gap: 16px;
-        width: 95vw;
-        max-width: 1000px;
         margin: 16px auto;
     }
 }
