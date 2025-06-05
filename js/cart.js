@@ -21,7 +21,7 @@ function displayCart() {
   priceHeader.textContent = "Price";
 
   const actionsHeader = document.createElement("h3");
-  actionsHeader.textContent = "";
+  actionsHeader.textContent = "Remove";
 
   headerDiv.appendChild(titleHeader);
   headerDiv.appendChild(ticketHeader);
