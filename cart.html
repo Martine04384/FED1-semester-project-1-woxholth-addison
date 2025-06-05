@@ -1,168 +1,98 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <title>Cart</title>
-    <meta charset="UTF-8" />
-    <meta name="description" content="Shoppingcart for tickets" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <!--google fonts-->
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=MuseoModerno:ital,wght@0,100..900;1,100..900&family=Roboto+Serif:ital,opsz,wght@0,8..144,100..900;1,8..144,100..900&display=swap"
-      rel="stylesheet"
-    />
-    <!--CSS-->
-    <link rel="stylesheet" href="css/cart.css" />
-    <!--Favicon-->
-    <link rel="icon" type="image/png" sizes="16x16" href="assets/favicon.png" />
-    <!--Icons-->
-    <script
-      src="https://kit.fontawesome.com/87671af21f.js"
-      crossorigin="anonymous"
-    ></script>
-  </head>
 
-  <body>
-    <header>
-      <a href="index.html" class="header-logo">
-        <div class="header-logo-container">
-          <img
-            src="./assets/open-science-735787-removebg-preview-2.png"
-            alt="Logo of earth with a keyhole and galaxies around."
-          />
-        </div>
-      </a>
-      <label
-        for="menu-checkbox"
-        class="hamburger-icon"
-        aria-label="Open navigation mobile"
-      >
-        <i class="fas fa-bars fa"></i>
-      </label>
-      <input type="checkbox" name="menu-checkbox" id="menu-checkbox" />
-      <nav>
-        <a href="index.html">Home</a>
-        <a href="explore.html">Explore</a>
-        <a href="exhibitions.html">Exhibitions</a>
-        <a href="events.html">Events</a>
-        <a href="tickets.html">Tickets</a>
-        <a href="cart.html" class="nav-active">Cart</a>
-      </nav>
-    </header>
-    <main>
-      <h1>Cart</h1>
-      <section>
-        <h2>Order summary</h2>
-        <div class="order-summary"></div>
-      </section>
-      <section>
-        <h2>Contact and payment details</h2>
-        <form id="form" class="form">
-          <fieldset>
-            <legend>Contact details</legend>
-            <label for="name">Full name</label>
-            <input
-              type="text"
-              name="name"
-              id="name"
-              class="form__input"
-              required
-            />
-            <label for="email">Email</label>
-            <input
-              type="email"
-              name="email"
-              id="email"
-              class="form__input"
-              required
-            />
-            <label for="address">Address</label>
-            <input
-              type="text"
-              name="address"
-              id="address"
-              class="form__input"
-              required
-            />
-            <label for="streetnumber">Street number</label>
-            <input
-              type="number"
-              name="streetnumber"
-              id="streetnumber"
-              class="form__input"
-              required
-            />
-            <label for="postalcode">Postal code</label>
-            <input
-              type="number"
-              name="postalcode"
-              id="postalcode"
-              class="form__input"
-              required
-            />
-            <label for="city">City</label>
-            <input
-              type="text"
-              name="city"
-              id="city"
-              class="form__input"
-              required
-            />
-            <label for="country">Country</label>
-            <input
-              type="text"
-              name="country"
-              id="country"
-              class="form__input"
-              required
-            />
-          </fieldset>
-          <fieldset>
-            <legend>Payment details</legend>
-            <label for="cardnumber">Cardnumber</label>
-            <input
-              type="number"
-              name="cardnumber"
-              id="cardnumber"
-              class="form__input"
-              placeholder="1234 5678 9012 3456"
-              required
-            />
-            <label for="expiry">Expiry</label>
-            <input
-              type="number"
-              name="expiry"
-              id="expiry"
-              class="form__input"
-              placeholder="mm/yy"
-              required
-            />
-            <label for="cvc">CVC</label>
-            <input
-              type="number"
-              name="cvc"
-              id="cvc"
-              class="form__input"
-              placeholder="***"
-              required
-            />
-          </fieldset>
-          <button type="submit" class="cta-button">Confirm order</button>
-        </form>
-      </section>
-    </main>
-    <footer>
-      <a href="about.html">About</a>
-      <a href="contact-us.html">Send us a message</a>
-      <a href="get-involved.html">Get involved</a>
-      <a href="visit.html">Visit</a>
-    </footer>
-    <!--User feedback global-->
-    <dialog id="dialog">
-      <p id="dialog-message"></p>
-      <button id="close-dialog" class="cta-button">Close</button>
-    </dialog>
-    <script type="module" src="./js/cart.js"></script>
-  </body>
+<head>
+  <title>Cart</title>
+  <meta charset="UTF-8">
+  <meta name="description" content="Shoppingcart for tickets">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!--google fonts-->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=MuseoModerno:ital,wght@0,100..900;1,100..900&family=Roboto+Serif:ital,opsz,wght@0,8..144,100..900;1,8..144,100..900&display=swap"
+    rel="stylesheet">
+  <!--CSS-->
+  <link rel="stylesheet" href="css/cart.css">
+  <!--Favicon-->
+  <link rel="icon" type="image/png" sizes="16x16" href="assets/favicon.png">
+  <!--Icons-->
+  <script src="https://kit.fontawesome.com/87671af21f.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+  <header>
+    <a href="index.html" class="header-logo">
+      <div class="header-logo-container">
+        <img src="./assets/open-science-735787-removebg-preview-2.png"
+          alt="Logo of earth with a keyhole and galaxies around.">
+      </div>
+    </a>
+    <label for="menu-checkbox" class="hamburger-icon" aria-label="Open navigation mobile">
+      <i class="fas fa-bars fa"></i>
+    </label>
+    <input type="checkbox" name="menu-checkbox" id="menu-checkbox">
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="explore.html">Explore</a>
+      <a href="exhibitions.html">Exhibitions</a>
+      <a href="events.html">Events</a>
+      <a href="tickets.html">Tickets</a>
+      <a href="cart.html" class="nav-active">Cart</a>
+    </nav>
+  </header>
+  <main>
+    <h1>Cart</h1>
+    <section>
+      <h2>Order summary</h2>
+      <div class="order-summary"></div>
+    </section>
+    <section>
+      <h2>Contact and payment details</h2>
+      <form id="form" class="form">
+        <fieldset>
+          <legend>Contact details</legend>
+          <label for="name">Full name</label>
+          <input type="text" name="name" id="name" class="form__input" required>
+          <label for="email">Email</label>
+          <input type="email" name="email" id="email" class="form__input" required>
+          <label for="address">Address</label>
+          <input type="text" name="address" id="address" class="form__input" required>
+          <label for="streetnumber">Street number</label>
+          <input type="number" name="streetnumber" id="streetnumber" class="form__input" required>
+          <label for="postalcode">Postal code</label>
+          <input type="number" name="postalcode" id="postalcode" class="form__input" required>
+          <label for="city">City</label>
+          <input type="text" name="city" id="city" class="form__input" required>
+          <label for="country">Country</label>
+          <input type="text" name="country" id="country" class="form__input" required>
+        </fieldset>
+        <fieldset>
+          <legend>Payment details</legend>
+          <label for="cardnumber">Cardnumber</label>
+          <input type="number" name="cardnumber" id="cardnumber" class="form__input" placeholder="1234 5678 9012 3456"
+            required>
+          <label for="expiry">Expiry</label>
+          <input type="number" name="expiry" id="expiry" class="form__input" placeholder="mm/yy" required>
+          <label for="cvc">CVC</label>
+          <input type="number" name="cvc" id="cvc" class="form__input" placeholder="***" required>
+        </fieldset>
+        <button type="submit" class="cta-button">Confirm order</button>
+      </form>
+    </section>
+  </main>
+  <footer>
+    <a href="about.html">About</a>
+    <a href="contact-us.html">Send us a message</a>
+    <a href="get-involved.html">Get involved</a>
+    <a href="visit.html">Visit</a>
+  </footer>
+  <!--User feedback global-->
+  <dialog id="dialog">
+    <p id="dialog-message"></p>
+    <button id="close-dialog" class="cta-button">Close</button>
+  </dialog>
+  <script type="module" src="./js/cart.js"></script>
+</body>
+
 </html>

@@ -1,415 +1,291 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <title>Tickets</title>
-    <meta charset="UTF-8" />
-    <meta name="description" content="Buy tickets for our events." />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <!--google fonts-->
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=MuseoModerno:ital,wght@0,100..900;1,100..900&family=Roboto+Serif:ital,opsz,wght@0,8..144,100..900;1,8..144,100..900&display=swap"
-      rel="stylesheet"
-    />
-    <!--CSS-->
-    <link rel="stylesheet" href="css/tickets.css" />
-    <!--Favicon-->
-    <link rel="icon" type="image/png" sizes="16x16" href="assets/favicon.png" />
-    <!--Icons-->
-    <script
-      src="https://kit.fontawesome.com/87671af21f.js"
-      crossorigin="anonymous"
-    ></script>
-  </head>
-  <body>
-    <header>
-      <a href="index.html" class="header-logo">
-        <div class="header-logo-container">
-          <img
-            src="./assets/open-science-735787-removebg-preview-2.png"
-            alt="Logo of earth with a keyhole and galaxies around."
-          />
-        </div>
-      </a>
-      <label
-        for="menu-checkbox"
-        class="hamburger-icon"
-        aria-label="Open navigation mobile"
-      >
-        <i class="fas fa-bars fa"></i>
-      </label>
-      <input type="checkbox" name="menu-checkbox" id="menu-checkbox" />
-      <nav>
-        <a href="index.html">Home</a>
-        <a href="explore.html">Explore</a>
-        <a href="exhibitions.html">Exhibitions</a>
-        <a href="events.html">Events</a>
-        <a href="tickets.html" class="nav-active">Tickets</a>
-        <a href="cart.html">Cart</a>
-      </nav>
-    </header>
-    <main>
-      <h1>Tickets</h1>
-      <section class="guided-tours">
-        <h2>Pricing guided tours</h2>
-        <table>
-          <thead>
-            <tr>
-              <th>Category</th>
-              <th>Price</th>
-              <th>Quantity</th>
-            </tr>
-          </thead>
-          <tbody>
-            <tr>
-              <td>Kids</td>
-              <td>Free</td>
-              <td>
-                <div class="qty-container">
-                  <button type="button" class="qty-count-minus">-</button>
-                  <input
-                    type="number"
-                    class="qty-count"
-                    min="0"
-                    value="0"
-                    step="1"
-                    aria-label="Quantity"
-                    data-id="guided-kids"
-                    data-title="Guided Tour - Kids"
-                    data-price="0"
-                  />
-                  <button type="button" class="qty-count-plus">+</button>
-                </div>
-              </td>
-            </tr>
-            <tr>
-              <td>Students</td>
-              <td>$5</td>
-              <td>
-                <div class="qty-container">
-                  <button type="button" class="qty-count-minus">-</button>
-                  <input
-                    type="number"
-                    class="qty-count"
-                    min="0"
-                    value="0"
-                    step="1"
-                    aria-label="Quantity"
-                    data-id="guided-students"
-                    data-title="Guided Tour - Students"
-                    data-price="5"
-                  />
-                  <button type="button" class="qty-count-plus">+</button>
-                </div>
-              </td>
-            </tr>
-            <tr>
-              <td>Adults</td>
-              <td>$10</td>
-              <td>
-                <div class="qty-container">
-                  <button type="button" class="qty-count-minus">-</button>
-                  <input
-                    type="number"
-                    class="qty-count"
-                    min="0"
-                    value="0"
-                    step="1"
-                    aria-label="Quantity"
-                    data-id="guided-adults"
-                    data-title="Guided Tour - Adults"
-                    data-price="10"
-                  />
-                  <button type="button" class="qty-count-plus">+</button>
-                </div>
-              </td>
-            </tr>
-          </tbody>
-        </table>
-        <button type="button" class="cta-button add-to-cart">
-          Add to cart
-        </button>
-      </section>
-      <section>
-        <h2>Book Special Events</h2>
-        <div class="flex">
-          <article class="card">
-            <div class="card-image-container">
-              <img
-                src="./assets/roberto-nickson-396152.jpg"
-                alt="Mammoth in the middle of a museum"
-              />
-            </div>
-            <h3>Night in the museum</h3>
-            <h4>December 20 2024</h4>
-            <table>
-              <thead>
-                <tr>
-                  <th>Category</th>
-                  <th>Price</th>
-                  <th>Quantity</th>
-                </tr>
-              </thead>
-              <tbody>
-                <tr>
-                  <td>Kids</td>
-                  <td>Free</td>
-                  <td>
-                    <div class="qty-container">
-                      <button type="button" class="qty-count-minus">-</button>
-                      <input
-                        type="number"
-                        class="qty-count"
-                        min="0"
-                        value="0"
-                        step="1"
-                        aria-label="Quantity"
-                        data-id="night-kids"
-                        data-title="Night in the Museum - Kids"
-                        data-price="0"
-                      />
-                      <button type="button" class="qty-count-plus">+</button>
-                    </div>
-                  </td>
-                </tr>
-                <tr>
-                  <td>Students</td>
-                  <td>$5</td>
-                  <td>
-                    <div class="qty-container">
-                      <button type="button" class="qty-count-minus">-</button>
-                      <input
-                        type="number"
-                        class="qty-count"
-                        min="0"
-                        value="0"
-                        step="1"
-                        aria-label="Quantity"
-                        data-id="night-students"
-                        data-title="Night in the Museum - Students"
-                        data-price="5"
-                      />
-                      <button type="button" class="qty-count-plus">+</button>
-                    </div>
-                  </td>
-                </tr>
-                <tr>
-                  <td>Adults</td>
-                  <td>$10</td>
-                  <td>
-                    <div class="qty-container">
-                      <button type="button" class="qty-count-minus">-</button>
-                      <input
-                        type="number"
-                        class="qty-count"
-                        min="0"
-                        value="0"
-                        step="1"
-                        aria-label="Quantity"
-                        data-id="night-adults"
-                        data-title="Night in the Museum - Adults"
-                        data-price="10"
-                      />
-                      <button type="button" class="qty-count-plus">+</button>
-                    </div>
-                  </td>
-                </tr>
-              </tbody>
-            </table>
-            <button type="button" class="cta-button add-to-cart">
-              Add to cart
-            </button>
-          </article>
-          <article class="card">
-            <div class="card-image-container">
-              <img
-                src="./assets/celso-405219.jpg"
-                alt="The moon in different phases"
-              />
-            </div>
-            <h3>Professor of aeronautics</h3>
-            <h4>December 13 2024</h4>
-            <table>
-              <thead>
-                <tr>
-                  <th>Category</th>
-                  <th>Price</th>
-                  <th>Quantity</th>
-                </tr>
-              </thead>
-              <tbody>
-                <tr>
-                  <td>Kids</td>
-                  <td>Free</td>
-                  <td>
-                    <div class="qty-container">
-                      <button type="button" class="qty-count-minus">-</button>
-                      <input
-                        type="number"
-                        class="qty-count"
-                        min="0"
-                        value="0"
-                        step="1"
-                        aria-label="Quantity"
-                        data-id="aero-kids"
-                        data-title="Professor of Aeronautics - Kids"
-                        data-price="0"
-                      />
-                      <button type="button" class="qty-count-plus">+</button>
-                    </div>
-                  </td>
-                </tr>
-                <tr>
-                  <td>Students</td>
-                  <td>$5</td>
-                  <td>
-                    <div class="qty-container">
-                      <button type="button" class="qty-count-minus">-</button>
-                      <input
-                        type="number"
-                        class="qty-count"
-                        min="0"
-                        value="0"
-                        step="1"
-                        aria-label="Quantity"
-                        data-id="aero-students"
-                        data-title="Professor of Aeronautics - Students"
-                        data-price="5"
-                      />
-                      <button type="button" class="qty-count-plus">+</button>
-                    </div>
-                  </td>
-                </tr>
-                <tr>
-                  <td>Adults</td>
-                  <td>$10</td>
-                  <td>
-                    <div class="qty-container">
-                      <button type="button" class="qty-count-minus">-</button>
-                      <input
-                        type="number"
-                        class="qty-count"
-                        min="0"
-                        value="0"
-                        step="1"
-                        aria-label="Quantity"
-                        data-id="aero-adults"
-                        data-title="Professor of Aeronautics - Adults"
-                        data-price="10"
-                      />
-                      <button type="button" class="qty-count-plus">+</button>
-                    </div>
-                  </td>
-                </tr>
-              </tbody>
-            </table>
-            <button type="button" class="cta-button add-to-cart">
-              Add to cart
-            </button>
-          </article>
-          <article class="card">
-            <div class="card-image-container">
-              <img
-                src="./assets/scientific-2040795_1280.jpg"
-                alt="Scientist looking at a reactor"
-              />
-            </div>
-            <h3>Energetica Exhibition</h3>
-            <h4>December 15 2024</h4>
-            <table>
-              <thead>
-                <tr>
-                  <th>Category</th>
-                  <th>Price</th>
-                  <th>Quantity</th>
-                </tr>
-              </thead>
-              <tbody>
-                <tr>
-                  <td>Kids</td>
-                  <td>Free</td>
-                  <td>
-                    <div class="qty-container">
-                      <button type="button" class="qty-count-minus">-</button>
-                      <input
-                        type="number"
-                        class="qty-count"
-                        min="0"
-                        value="0"
-                        step="1"
-                        aria-label="Quantity"
-                        data-id="energetica-kids"
-                        data-title="Energetica Exhibition - Kids"
-                        data-price="0"
-                      />
-                      <button type="button" class="qty-count-plus">+</button>
-                    </div>
-                  </td>
-                </tr>
-                <tr>
-                  <td>Students</td>
-                  <td>$5</td>
-                  <td>
-                    <div class="qty-container">
-                      <button type="button" class="qty-count-minus">-</button>
-                      <input
-                        type="number"
-                        class="qty-count"
-                        min="0"
-                        value="0"
-                        step="1"
-                        aria-label="Quantity"
-                        data-id="energetica-students"
-                        data-title="Energetica Exhibition - Students"
-                        data-price="5"
-                      />
-                      <button type="button" class="qty-count-plus">+</button>
-                    </div>
-                  </td>
-                </tr>
-                <tr>
-                  <td>Adults</td>
-                  <td>$10</td>
-                  <td>
-                    <div class="qty-container">
-                      <button type="button" class="qty-count-minus">-</button>
-                      <input
-                        type="number"
-                        class="qty-count"
-                        min="0"
-                        value="0"
-                        step="1"
-                        aria-label="Quantity"
-                        data-id="energetica-adults"
-                        data-title="Energetica Exhibition - Adults"
-                        data-price="10"
-                      />
-                      <button type="button" class="qty-count-plus">+</button>
-                    </div>
-                  </td>
-                </tr>
-              </tbody>
-            </table>
-            <button type="button" class="cta-button add-to-cart">
-              Add to cart
-            </button>
-          </article>
-        </div>
-      </section>
-    </main>
 
-    <footer>
-      <a href="about.html">About</a>
-      <a href="contact-us.html">Send us a message</a>
-      <a href="get-involved.html">Get involved</a>
-      <a href="visit.html">Visit</a>
-    </footer>
-    <!--User feedback global-->
-    <dialog id="dialog">
-      <p id="dialog-message"></p>
-      <button id="close-dialog" class="cta-button">Close</button>
-    </dialog>
-    <script type="module" src="./js/tickets.js"></script>
-  </body>
+<head>
+  <title>Tickets</title>
+  <meta charset="UTF-8">
+  <meta name="description" content="Buy tickets for our events.">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!--google fonts-->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=MuseoModerno:ital,wght@0,100..900;1,100..900&family=Roboto+Serif:ital,opsz,wght@0,8..144,100..900;1,8..144,100..900&display=swap"
+    rel="stylesheet">
+  <!--CSS-->
+  <link rel="stylesheet" href="css/tickets.css">
+  <!--Favicon-->
+  <link rel="icon" type="image/png" sizes="16x16" href="assets/favicon.png">
+  <!--Icons-->
+  <script src="https://kit.fontawesome.com/87671af21f.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+  <header>
+    <a href="index.html" class="header-logo">
+      <div class="header-logo-container">
+        <img src="./assets/open-science-735787-removebg-preview-2.png"
+          alt="Logo of earth with a keyhole and galaxies around.">
+      </div>
+    </a>
+    <label for="menu-checkbox" class="hamburger-icon" aria-label="Open navigation mobile">
+      <i class="fas fa-bars fa"></i>
+    </label>
+    <input type="checkbox" name="menu-checkbox" id="menu-checkbox">
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="explore.html">Explore</a>
+      <a href="exhibitions.html">Exhibitions</a>
+      <a href="events.html">Events</a>
+      <a href="tickets.html" class="nav-active">Tickets</a>
+      <a href="cart.html">Cart</a>
+    </nav>
+  </header>
+  <main>
+    <h1>Tickets</h1>
+    <section class="guided-tours">
+      <h2>Pricing guided tours</h2>
+      <table>
+        <thead>
+          <tr>
+            <th>Category</th>
+            <th>Price</th>
+            <th>Quantity</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Kids</td>
+            <td>Free</td>
+            <td>
+              <div class="qty-container">
+                <button type="button" class="qty-count-minus">-</button>
+                <input type="number" class="qty-count" min="0" value="0" step="1" aria-label="Quantity"
+                  data-id="guided-kids" data-title="Guided Tour - Kids" data-price="0">
+                <button type="button" class="qty-count-plus">+</button>
+              </div>
+            </td>
+          </tr>
+          <tr>
+            <td>Students</td>
+            <td>$5</td>
+            <td>
+              <div class="qty-container">
+                <button type="button" class="qty-count-minus">-</button>
+                <input type="number" class="qty-count" min="0" value="0" step="1" aria-label="Quantity"
+                  data-id="guided-students" data-title="Guided Tour - Students" data-price="5">
+                <button type="button" class="qty-count-plus">+</button>
+              </div>
+            </td>
+          </tr>
+          <tr>
+            <td>Adults</td>
+            <td>$10</td>
+            <td>
+              <div class="qty-container">
+                <button type="button" class="qty-count-minus">-</button>
+                <input type="number" class="qty-count" min="0" value="0" step="1" aria-label="Quantity"
+                  data-id="guided-adults" data-title="Guided Tour - Adults" data-price="10">
+                <button type="button" class="qty-count-plus">+</button>
+              </div>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+      <button type="button" class="cta-button add-to-cart">
+        Add to cart
+      </button>
+    </section>
+    <section>
+      <h2>Book Special Events</h2>
+      <div class="flex">
+        <article class="card">
+          <div class="card-image-container">
+            <img src="./assets/roberto-nickson-396152.jpg" alt="Mammoth in the middle of a museum">
+          </div>
+          <h3>Night in the museum</h3>
+          <h4>December 20 2024</h4>
+          <table>
+            <thead>
+              <tr>
+                <th>Category</th>
+                <th>Price</th>
+                <th>Quantity</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Kids</td>
+                <td>Free</td>
+                <td>
+                  <div class="qty-container">
+                    <button type="button" class="qty-count-minus">-</button>
+                    <input type="number" class="qty-count" min="0" value="0" step="1" aria-label="Quantity"
+                      data-id="night-kids" data-title="Night in the Museum - Kids" data-price="0">
+                    <button type="button" class="qty-count-plus">+</button>
+                  </div>
+                </td>
+              </tr>
+              <tr>
+                <td>Students</td>
+                <td>$5</td>
+                <td>
+                  <div class="qty-container">
+                    <button type="button" class="qty-count-minus">-</button>
+                    <input type="number" class="qty-count" min="0" value="0" step="1" aria-label="Quantity"
+                      data-id="night-students" data-title="Night in the Museum - Students" data-price="5">
+                    <button type="button" class="qty-count-plus">+</button>
+                  </div>
+                </td>
+              </tr>
+              <tr>
+                <td>Adults</td>
+                <td>$10</td>
+                <td>
+                  <div class="qty-container">
+                    <button type="button" class="qty-count-minus">-</button>
+                    <input type="number" class="qty-count" min="0" value="0" step="1" aria-label="Quantity"
+                      data-id="night-adults" data-title="Night in the Museum - Adults" data-price="10">
+                    <button type="button" class="qty-count-plus">+</button>
+                  </div>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+          <button type="button" class="cta-button add-to-cart">
+            Add to cart
+          </button>
+        </article>
+        <article class="card">
+          <div class="card-image-container">
+            <img src="./assets/celso-405219.jpg" alt="The moon in different phases">
+          </div>
+          <h3>Professor of aeronautics</h3>
+          <h4>December 13 2024</h4>
+          <table>
+            <thead>
+              <tr>
+                <th>Category</th>
+                <th>Price</th>
+                <th>Quantity</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Kids</td>
+                <td>Free</td>
+                <td>
+                  <div class="qty-container">
+                    <button type="button" class="qty-count-minus">-</button>
+                    <input type="number" class="qty-count" min="0" value="0" step="1" aria-label="Quantity"
+                      data-id="aero-kids" data-title="Professor of Aeronautics - Kids" data-price="0">
+                    <button type="button" class="qty-count-plus">+</button>
+                  </div>
+                </td>
+              </tr>
+              <tr>
+                <td>Students</td>
+                <td>$5</td>
+                <td>
+                  <div class="qty-container">
+                    <button type="button" class="qty-count-minus">-</button>
+                    <input type="number" class="qty-count" min="0" value="0" step="1" aria-label="Quantity"
+                      data-id="aero-students" data-title="Professor of Aeronautics - Students" data-price="5">
+                    <button type="button" class="qty-count-plus">+</button>
+                  </div>
+                </td>
+              </tr>
+              <tr>
+                <td>Adults</td>
+                <td>$10</td>
+                <td>
+                  <div class="qty-container">
+                    <button type="button" class="qty-count-minus">-</button>
+                    <input type="number" class="qty-count" min="0" value="0" step="1" aria-label="Quantity"
+                      data-id="aero-adults" data-title="Professor of Aeronautics - Adults" data-price="10">
+                    <button type="button" class="qty-count-plus">+</button>
+                  </div>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+          <button type="button" class="cta-button add-to-cart">
+            Add to cart
+          </button>
+        </article>
+        <article class="card">
+          <div class="card-image-container">
+            <img src="./assets/scientific-2040795_1280.jpg" alt="Scientist looking at a reactor">
+          </div>
+          <h3>Energetica Exhibition</h3>
+          <h4>December 15 2024</h4>
+          <table>
+            <thead>
+              <tr>
+                <th>Category</th>
+                <th>Price</th>
+                <th>Quantity</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Kids</td>
+                <td>Free</td>
+                <td>
+                  <div class="qty-container">
+                    <button type="button" class="qty-count-minus">-</button>
+                    <input type="number" class="qty-count" min="0" value="0" step="1" aria-label="Quantity"
+                      data-id="energetica-kids" data-title="Energetica Exhibition - Kids" data-price="0">
+                    <button type="button" class="qty-count-plus">+</button>
+                  </div>
+                </td>
+              </tr>
+              <tr>
+                <td>Students</td>
+                <td>$5</td>
+                <td>
+                  <div class="qty-container">
+                    <button type="button" class="qty-count-minus">-</button>
+                    <input type="number" class="qty-count" min="0" value="0" step="1" aria-label="Quantity"
+                      data-id="energetica-students" data-title="Energetica Exhibition - Students" data-price="5">
+                    <button type="button" class="qty-count-plus">+</button>
+                  </div>
+                </td>
+              </tr>
+              <tr>
+                <td>Adults</td>
+                <td>$10</td>
+                <td>
+                  <div class="qty-container">
+                    <button type="button" class="qty-count-minus">-</button>
+                    <input type="number" class="qty-count" min="0" value="0" step="1" aria-label="Quantity"
+                      data-id="energetica-adults" data-title="Energetica Exhibition - Adults" data-price="10">
+                    <button type="button" class="qty-count-plus">+</button>
+                  </div>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+          <button type="button" class="cta-button add-to-cart">
+            Add to cart
+          </button>
+        </article>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <a href="about.html">About</a>
+    <a href="contact-us.html">Send us a message</a>
+    <a href="get-involved.html">Get involved</a>
+    <a href="visit.html">Visit</a>
+  </footer>
+  <!--User feedback global-->
+  <dialog id="dialog">
+    <p id="dialog-message"></p>
+    <button id="close-dialog" class="cta-button">Close</button>
+  </dialog>
+  <script type="module" src="./js/tickets.js"></script>
+</body>
+
 </html>
