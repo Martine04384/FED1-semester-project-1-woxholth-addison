@@ -1,113 +1,71 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
-
-<head>
+  <head>
     <title>Order summary</title>
-    <meta charset="UTF-8">
-    <meta name="description" content="Order summary">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="UTF-8" />
+    <meta name="description" content="Order summary" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
     <!--google fonts-->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-        href="https://fonts.googleapis.com/css2?family=MuseoModerno:ital,wght@0,100..900;1,100..900&family=Roboto+Serif:ital,opsz,wght@0,8..144,100..900;1,8..144,100..900&display=swap"
-        rel="stylesheet">
+      href="https://fonts.googleapis.com/css2?family=MuseoModerno:ital,wght@0,100..900;1,100..900&family=Roboto+Serif:ital,opsz,wght@0,8..144,100..900;1,8..144,100..900&display=swap"
+      rel="stylesheet"
+    />
     <!--CSS-->
-    <link rel="stylesheet" href="css/order-summary.css">
+    <link rel="stylesheet" href="css/order-summary.css" />
     <!--Favicon-->
-    <link rel="icon" type="image/png" sizes="16x16" href="assets/favicon.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="assets/favicon.png" />
     <!--Icons-->
-    <script src="https://kit.fontawesome.com/87671af21f.js" crossorigin="anonymous"></script>
-</head>
-
-<body>
+    <script
+      src="https://kit.fontawesome.com/87671af21f.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
     <header>
-        <a href="index.html" class="header-logo">
-            <img src="./assets/open-science-735787-removebg-preview-2.png"
-                alt="Logo of earth with a keyhole and galaxies around.">
-        </a>
-        <label for="menu-checkbox" class="hamburger-icon" aria-label="Open navigation mobile">
-            <i class="fas fa-bars fa"></i>
-        </label>
-        <input type="checkbox" name="menu-checkbox" id="menu-checkbox">
-        <nav>
-            <a href="index.html">Home</a>
-            <a href="explore.html">Explore</a>
-            <a href="exhibitions.html">Exhibitions</a>
-            <a href="events.html">Events</a>
-            <a href="tickets.html">Tickets</a>
-            <a href="cart.html" class="nav-active">Cart</a>
-        </nav>
+      <a href="index.html" class="header-logo">
+        <img
+          src="./assets/open-science-735787-removebg-preview-2.png"
+          alt="Logo of earth with a keyhole and galaxies around."
+        />
+      </a>
+      <label
+        for="menu-checkbox"
+        class="hamburger-icon"
+        aria-label="Open navigation mobile"
+      >
+        <i class="fas fa-bars fa"></i>
+      </label>
+      <input type="checkbox" name="menu-checkbox" id="menu-checkbox" />
+      <nav>
+        <a href="index.html">Home</a>
+        <a href="explore.html">Explore</a>
+        <a href="exhibitions.html">Exhibitions</a>
+        <a href="events.html">Events</a>
+        <a href="tickets.html">Tickets</a>
+        <a href="cart.html" class="nav-active">Cart</a>
+      </nav>
     </header>
     <main>
-        <h1>Order summary</h1>
-        <!--Help from Chat GTP to make table more accessible for screen readers
-        <table>
-            <thead>
-                <tr>
-                    <th scope="col">Event</th>
-                    <th scope="col">Tickets</th>
-                </tr>
-            </thead>
-            <tbody>
-                <tr class="section-heading">
-                    <td colspan="2">Guided tours</td>
-                </tr>
-                <tr>
-                    <td>Kids</td>
-                    <td>1</td>
-                </tr>
-                <tr>
-                    <td>Adults</td>
-                    <td>2</td>
-                </tr>
-                <tr>
-                    <td>Price</td>
-                    <td>$20</td>
-                </tr>
+      <h1>Order summary</h1>
+      <section class="order-summary">
+        <h2>Your order summary</h2>
+      </section>
 
-                <tr class="section-heading">
-                    <td colspan="2">Night in the museum</td>
-                </tr>
-                <tr>
-                    <td>Kids</td>
-                    <td>1</td>
-                </tr>
-                <tr>
-                    <td>Adults</td>
-                    <td>2</td>
-                </tr>
-                <tr>
-                    <td>Price</td>
-                    <td>$20</td>
-                </tr>
-                <tr class="section-heading total">
-                    <td>Total</td>
-                    <td>$40</td>
-                </tr>
-            </tbody>
-        </table> -->
-
-        <section class="order-summary">
-            <h2>Your order summary</h2>
-        </section>
-
-        <a href="exhibitions.html" class="cta-button">Back to exhibitions</a>
+      <a href="exhibitions.html" class="cta-button">Back to exhibitions</a>
     </main>
     <footer>
-        <a href="about.html">About</a>
-        <a href="contact-us.html">Send us a message</a>
-        <a href="get-involved.html">Get involved</a>
-        <a href="visit.html">Visit</a>
+      <a href="about.html">About</a>
+      <a href="contact-us.html">Send us a message</a>
+      <a href="get-involved.html">Get involved</a>
+      <a href="visit.html">Visit</a>
     </footer>
-
     <!--User feedback global-->
     <dialog id="dialog">
-        <p id="dialog-message"></p>
-        <button id="close-dialog" class="cta-button">Close</button>
+      <p id="dialog-message"></p>
+      <button id="close-dialog" class="cta-button">Close</button>
     </dialog>
-
     <script type="module" src="./js/order-summary.js"></script>
-</body>
-
+  </body>
 </html>

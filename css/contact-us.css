@@ -1,25 +1,27 @@
 @import url("./reset.css");
 @import url("./variables.css");
 
+/* Contact information */
 .contact-us {
-    text-align: center;
+  text-align: center;
 }
 
+/* Form */
 fieldset {
-    border: 2px solid var(--color-secondary);
-    border-radius: 20px;
-    padding: 20px;
+  border: 2px solid var(--color-secondary);
+  border-radius: 20px;
+  padding: 20px;
 }
 
 legend {
-    font-size: larger;
-    padding-bottom: 16px;
+  font-size: larger;
+  padding-bottom: 16px;
 }
 
 form {
-    max-width: 1000px;
+  max-width: 1000px;
 }
-  
+
 textarea {
-    height: 200px;
+  height: 200px;
 }

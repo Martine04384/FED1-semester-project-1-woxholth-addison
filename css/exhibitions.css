@@ -1,36 +1,36 @@
 @import url("./reset.css");
 @import url("./variables.css");
 
-@media screen and (min-width:730px) {
-    .exhibition__flex {
-        display: flex;
-        flex-direction: row;
-        margin: 16px auto;
-        gap: 16px;
-        width: 95vw;
-        max-width: 1000px;
-    }
+@media screen and (min-width: 730px) {
+  .exhibition__flex {
+    display: flex;
+    flex-direction: row;
+    margin: 16px auto;
+    gap: 16px;
+    width: 95vw;
+    max-width: 1000px;
+  }
 
-    .medium {
-        height: 250px;
-        width: 100%;
-        max-width: 500px;
-    }
-    
-    .large {
-        width: 100%;
-        max-width: 500px;
-    }  
+  .medium {
+    height: 250px;
+    width: 100%;
+    max-width: 500px;
+  }
 
-    .x-large {
-        width: 95vw;
-        max-width: 1000px;
-        margin: 16px auto;
-    }
+  .large {
+    width: 100%;
+    max-width: 500px;
+  }
 
-    .x-large-img {
-        width: 100%;
-        max-width: 1000px;
-        margin: 0 auto;
-    }
+  .x-large {
+    width: 95vw;
+    max-width: 1000px;
+    margin: 16px auto;
+  }
+
+  .x-large-img {
+    width: 100%;
+    max-width: 1000px;
+    margin: 0 auto;
+  }
 }

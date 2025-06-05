@@ -1,6 +1,7 @@
 @import url("./reset.css");
 @import url("./variables.css");
 
+/* Order summary */
 .order-summary {
   border-radius: 20px;
   border: 2px solid var(--color-secondary);

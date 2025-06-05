@@ -1,4 +1,4 @@
-import { cart, loadCart, saveCart } from "./save-and-load-cart.js";
+import { cart, saveCart } from "./save-and-load-cart.js";
 import { showMessage } from "./message.js";
 
 // Source: Inspiration from JS1 project - Square Eyes

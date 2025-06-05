@@ -1,4 +1,4 @@
-import { showMessage } from "./message.js";
+import { showMessage } from "./utilities/message.js";
 
 // Source: Inspiration from JS1 project - Square Eyes
 
