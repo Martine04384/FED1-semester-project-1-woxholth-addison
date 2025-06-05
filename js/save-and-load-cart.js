@@ -1,6 +1,6 @@
 import { showMessage } from "./message.js";
 
-// Source: Code from JS - Square Eyes
+// Source: Inspiration from JS1 project - Square Eyes
 
 export let cart = [];
 

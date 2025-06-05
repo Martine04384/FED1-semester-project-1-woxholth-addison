@@ -2,6 +2,8 @@ import { showMessage } from "./message.js";
 import { loadCart, saveCart } from "./save-and-load-cart.js";
 import { addToCart } from "./add-to-cart.js";
 
+// Source: Inspiration from JS1 project - Square Eyes
+
 loadCart();
 
 // Quantity buttons
@@ -24,7 +26,7 @@ document.querySelectorAll(".qty-container").forEach((container) => {
 // Add to cart button event
 document.querySelectorAll(".add-to-cart").forEach((button) => {
   button.addEventListener("click", () => {
-    const container = button.closest("section, article"); // Only look inside this section/card
+    const container = button.closest("section, article");
 
     container.querySelectorAll(".qty-count").forEach((input) => {
       const quantity = parseInt(input.value);
@@ -36,10 +38,9 @@ document.querySelectorAll(".add-to-cart").forEach((button) => {
         addToCart(id, title, quantity, price);
       }
 
-      input.value = 0; // Reset input after adding
+      input.value = 0;
     });
 
     saveCart();
-    showMessage("Tickets added to cart!");
   });
 });

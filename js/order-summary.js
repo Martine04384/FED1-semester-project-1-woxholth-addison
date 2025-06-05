@@ -1,6 +1,6 @@
 import { showMessage } from "./message.js";
 
-// Source: Code implemented from JS1 Square Eyes
+// Source: Inspiration from JS1 project - Square Eyes
 
 document.addEventListener("DOMContentLoaded", () => {
   const orderContainer = document.querySelector(".order-summary");

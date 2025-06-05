@@ -1,7 +1,7 @@
-import { cart, saveCart, loadCart } from "./save-and-load-cart.js";
+import { cart, loadCart, saveCart } from "./save-and-load-cart.js";
 import { showMessage } from "./message.js";
 
-// Source: JS - Square Eyes
+// Source: Inspiration from JS1 project - Square Eyes
 
 export function addToCart(id, title, quantity = 1, price = 0) {
   try {

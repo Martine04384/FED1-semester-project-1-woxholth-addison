@@ -1,7 +1,7 @@
 import { showMessage } from "./message.js";
 import { cart, loadCart, saveCart } from "./save-and-load-cart.js";
 
-// Source: Code implemented from JS1 Square Eyes
+// Source: Inspiration from JS1 project - Square Eyes
 
 function displayCart() {
   const cartContainer = document.querySelector(".order-summary");

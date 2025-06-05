@@ -1,4 +1,4 @@
-// Source: Code from from JS and PE1
+// Source: Inspiration from JS1 project - Square Eyes
 
 export function showMessage(message) {
   const dialog = document.getElementById("dialog");

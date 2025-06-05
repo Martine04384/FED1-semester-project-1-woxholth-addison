@@ -1,6 +1,6 @@
 import { showMessage } from "./message.js";
 
-// Source: Inspiration from JS - Square Eyes
+// Source: Inspiration from JS1 project - Square Eyes
 
 const form = document.querySelector(".form");
 
