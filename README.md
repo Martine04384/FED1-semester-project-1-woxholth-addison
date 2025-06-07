@@ -17,6 +17,7 @@ The project was planned and tracked using a GitHub Project Board to stay organiz
 - Figma
 - HTML
 - CSS
+- JavaScript
 - GitHub
 
 ## Installing
